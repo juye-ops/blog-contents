@@ -89,57 +89,63 @@ function parsePortfolio(baseDir) {
 }
 
 // [Posts] 트리 구조화 헬퍼 함수
-function buildCategoryTree(flatPosts) {
-  return flatPosts.reduce((acc, curr) => {
-    let domainNode = acc.find(d => d.domain === curr.domain);
+function buildCategoryTree(flatPostsArray) {
+  return flatPostsArray.reduce((acc, curr) => {
+    // 이제는 curr.data 안에 frontmatter가 들어있음
+    const fm = curr.data.frontmatter; 
+    
+    let domainNode = acc.find(d => d.domain === fm.domain);
     if (!domainNode) {
-      domainNode = { domain: curr.frontmatter.domain, domainSlug: curr.frontmatter.domain.toLowerCase(), categories: [] };
+      domainNode = { domain: fm.domain, domainSlug: fm.domain.toLowerCase(), categories: [] };
       acc.push(domainNode);
     }
 
-    const categorySlug = curr.frontmatter.category.toLowerCase().trim().replace(/[\/\s]+/g, '-');
-    let categoryNode = domainNode.categories.find(c => c.frontmatter.category === curr.frontmatter.category);
+    const categorySlug = fm.category.toLowerCase().trim().replace(/[\/\s]+/g, '-');
+    let categoryNode = domainNode.categories.find(c => c.category === fm.category);
     if (!categoryNode) {
-      categoryNode = { category: curr.frontmatter.category, categorySlug, posts: [] };
+      categoryNode = { category: fm.category, categorySlug, slugs: [] };
       domainNode.categories.push(categoryNode);
     }
 
-    categoryNode.posts.push(curr);
+    categoryNode.slugs.push(curr.slug); 
     return acc;
   }, []).sort((a, b) => a.domain.localeCompare(b.domain));
 }
 
-// [Posts] 파싱 메인 수정
+// [Posts] 파싱 메인
 function parsePosts(baseDir) {
   const postsDir = path.join(baseDir, 'posts');
-  if (!fs.existsSync(postsDir)) return [];
+  if (!fs.existsSync(postsDir)) return { treePosts: [], flatPosts: {} };
 
   const files = globSync(path.join(postsDir, '**/*.md').replace(/\\/g, '/'));
 
-  const flatPosts = files.map(filePath => {
+  const flatPostsArray = files.map(filePath => {
     const { data, content } = matter(fs.readFileSync(filePath, 'utf-8'));
-
-    // relative path를 이용해 나중에 fetch할 주소 생성
     const relativePath = path.relative(baseDir, filePath).replace(/\\/g, '/');
-    const contentUrl = `${RAW_URL_ROOT}/${relativePath}`;
+    const slug = path.basename(filePath, '.md');
 
+    // 여기서 slug를 제외한 순수 데이터만 구성합니다.
     return {
-      frontmatter: {
-        ...data
-      },
-      slug: path.basename(filePath, '.md'),
-      searchContent: sanitizeContent(content), // 검색용 텍스트만 유지
-      contentUrl: contentUrl // 본문 대신 URL 제공
+      slug: slug, // 나중에 flatPosts를 만들 때 Key로 쓰기 위한 용도
+      data: {
+        frontmatter: data,
+        searchContent: sanitizeContent(content),
+        contentUrl: `${RAW_URL_ROOT}/${relativePath}`
+      }
     };
   });
 
-  flatPosts.sort((a, b) => {
-    const dateA = new Date(a.frontmatter.date || 0).getTime();
-    const dateB = new Date(b.frontmatter.date || 0).getTime();
-    return dateB - dateA; // 큰 값(최신)이 앞으로 오도록
-  });
+  // 날짜순 정렬 (frontmatter의 date 기준)
+  flatPostsArray.sort((a, b) => new Date(b.data.frontmatter.date || 0) - new Date(a.data.frontmatter.date || 0));
 
-  return buildCategoryTree(flatPosts);
+  return {
+    treePosts: buildCategoryTree(flatPostsArray),
+    flatPosts: flatPostsArray.reduce((acc, curr) => {
+      // Key는 slug, Value는 slug를 제외한 나머지 데이터
+      acc[curr.slug] = curr.data;
+      return acc;
+    }, {})
+  };
 }
 
 // ==========================================
@@ -149,21 +155,27 @@ async function main() {
   console.log('⏳ Starting Blog Engine...');
   fs.mkdirSync(DIST_DIR, { recursive: true });
 
-  // 1. 소스 준비 (로컬 clone 또는 로봇 패스)
   const baseDir = prepareBaseDirectory();
 
-  // 2. 각 주체별 파싱 (각각의 함수가 독립적으로 연산)
   console.log('📦 Parsing data categories...');
-  const postsTree = parsePosts(baseDir);
+  const { treePosts, flatPosts } = parsePosts(baseDir);
   const aboutData = parseAbout(baseDir);
   const portfolioData = parsePortfolio(baseDir);
 
-  // 3. 분리형 JSON 파일 내보내기
-  if (postsTree.length) fs.writeFileSync(path.join(DIST_DIR, 'posts.json'), JSON.stringify(postsTree, null, 2));
-  if (aboutData) fs.writeFileSync(path.join(DIST_DIR, 'about.json'), JSON.stringify(aboutData, null, 2));
-  if (portfolioData.length) fs.writeFileSync(path.join(DIST_DIR, 'portfolio.json'), JSON.stringify(portfolioData, null, 2));
+  // 분리형 JSON 파일 내보내기
+  if (treePosts.length) 
+    fs.writeFileSync(path.join(DIST_DIR, 'posts.tree.json'), JSON.stringify(treePosts, null, 2));
+  
+  if (Object.keys(flatPosts).length) 
+    fs.writeFileSync(path.join(DIST_DIR, 'posts.flat.json'), JSON.stringify(flatPosts, null, 2));
 
-  console.log('🚀 [SUCCESS] Metadata separated perfectly! (Cloned sources kept in main-branch/)');
+  if (aboutData) 
+    fs.writeFileSync(path.join(DIST_DIR, 'about.json'), JSON.stringify(aboutData, null, 2));
+  
+  if (portfolioData.length) 
+    fs.writeFileSync(path.join(DIST_DIR, 'portfolio.json'), JSON.stringify(portfolioData, null, 2));
+
+  console.log('🚀 [SUCCESS] Metadata separated into tree and flat structures!');
 }
 
 main().catch(err => {
