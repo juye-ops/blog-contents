@@ -85,7 +85,7 @@ function parsePortfolio(baseDir) {
       index: data.index || 0,
       contentUrl: `${RAW_URL_ROOT}/${relativePath}` // 링크로 변경
     };
-  })
+  }).sort((a, b) => a.index - b.index);
 }
 
 // [Posts] 트리 구조화 헬퍼 함수
@@ -131,6 +131,12 @@ function parsePosts(baseDir) {
       searchContent: sanitizeContent(content), // 검색용 텍스트만 유지
       contentUrl: contentUrl // 본문 대신 URL 제공
     };
+  });
+
+  flatPosts.sort((a, b) => {
+    const dateA = new Date(a.frontmatter.date || 0).getTime();
+    const dateB = new Date(b.frontmatter.date || 0).getTime();
+    return dateB - dateA; // 큰 값(최신)이 앞으로 오도록
   });
 
   return buildCategoryTree(flatPosts);
