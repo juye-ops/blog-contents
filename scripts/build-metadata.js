@@ -66,9 +66,6 @@ function parseAbout(baseDir) {
 
   const { data } = matter(fs.readFileSync(aboutPath, 'utf-8'));
   return {
-    frontmatter: {
-      ...data
-    },
     contentUrl: `${RAW_URL_ROOT}/about.md` // 링크로 변경
   };
 }
@@ -84,19 +81,11 @@ function parsePortfolio(baseDir) {
     const { data } = matter(fs.readFileSync(filePath, 'utf-8'));
     const relativePath = path.relative(baseDir, filePath).replace(/\\/g, '/');
 
-    const processedImages = (data.images || []).map(img => ({
-      ...img,
-      src: img.src ? `${RAW_URL_ROOT}/${img.src.replace(/^\//, '')}` : null
-    }));
-
     return {
-      frontmatter: {
-        ...data
-      },
-      slug: path.basename(filePath, '.md'),
+      index: data.index || 0,
       contentUrl: `${RAW_URL_ROOT}/${relativePath}` // 링크로 변경
     };
-  }).sort((a, b) => a.index - b.index);
+  })
 }
 
 // [Posts] 트리 구조화 헬퍼 함수
@@ -139,12 +128,11 @@ function parsePosts(baseDir) {
         ...data
       },
       slug: path.basename(filePath, '.md'),
-      contentUrl: contentUrl, // 본문 대신 URL 제공
-      searchContent: sanitizeContent(content) // 검색용 텍스트만 유지
+      searchContent: sanitizeContent(content), // 검색용 텍스트만 유지
+      contentUrl: contentUrl // 본문 대신 URL 제공
     };
   });
 
-  console.log(flatPosts)
   return buildCategoryTree(flatPosts);
 }
 
