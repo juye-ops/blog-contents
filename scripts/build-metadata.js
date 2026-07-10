@@ -90,8 +90,7 @@ function parsePortfolio(baseDir) {
 
 // [Posts] 트리 구조화 헬퍼 함수
 function buildCategoryTree(flatPostsArray) {
-  return flatPostsArray.reduce((acc, curr) => {
-    // 이제는 curr.data 안에 frontmatter가 들어있음
+  const tree = flatPostsArray.reduce((acc, curr) => {
     const fm = curr.data.frontmatter; 
     
     let domainNode = acc.find(d => d.domain === fm.domain);
@@ -107,9 +106,22 @@ function buildCategoryTree(flatPostsArray) {
       domainNode.categories.push(categoryNode);
     }
 
-    categoryNode.slugs.push(curr.slug); 
+    categoryNode.slugs.push({
+      slug: curr.slug,
+      date: fm.date
+    }); 
+    
     return acc;
-  }, []).sort((a, b) => a.domain.localeCompare(b.domain));
+  }, []);
+
+  // [핵심] 카테고리별로 날짜 기준 정렬
+  tree.forEach(domain => {
+    domain.categories.forEach(category => {
+      category.slugs.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
+    });
+  });
+
+  return tree.sort((a, b) => a.domain.localeCompare(b.domain));
 }
 
 // [Posts] 파싱 메인
