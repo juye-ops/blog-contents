@@ -8,43 +8,21 @@ const { execSync } = require('child_process');
 // ==========================================
 // 🔒 1. 환경 설정 및 상수 정의
 // ==========================================
-const GITHUB_USERNAME = 'juye-ops'; 
+const GITHUB_USERNAME = 'juye-ops';
 const REPO_NAME = 'blog-contents';
 const RAW_URL_ROOT = `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${REPO_NAME}/main`;
 const DIST_DIR = path.join(process.cwd(), 'dist');
 
 // 🎯 요청하신 대로 폴더명 변경
-const LOCAL_MAIN_DIR = path.join(process.cwd(), 'main-branch'); 
+const LOCAL_MAIN_DIR = path.join(process.cwd(), 'main-branch');
 
 // ==========================================
 // 🖼️ 2. 유틸리티 함수 (텍스트 및 경로 정제)
 // ==========================================
 
-// 마크다운 내 이미지 경로를 GitHub Raw 주소로 치환
-function transformImagePaths(content) {
-  if (!content) return '';
-  let updatedContent = content.replace(/!\[(.*?)\]\((.*?)\)/g, (match, alt, src) => {
-    if (src.startsWith('http')) return match;
-    const cleanSrc = src.replace(/^\.\//, '').replace(/^\//, '');
-    return `![${alt}](${RAW_URL_ROOT}/${cleanSrc})`;
-  });
-  updatedContent = updatedContent.replace(/!\[\[(.*?)\]\]/g, (match, src) => {
-    if (src.startsWith('http')) return match;
-    const cleanSrc = src.includes('/') ? src : `assets/${src}`;
-    return `![image](${RAW_URL_ROOT}/${cleanSrc})`;
-  });
-  return updatedContent;
-}
-
 // 검색 엔진(Fuse.js) 최적화용 텍스트 정제
 function sanitizeContent(content) {
   return content.replace(/[#*`~\-_[\]()]/g, '').replace(/\s+/g, ' ').trim().slice(0, 1500);
-}
-
-// 파일 날짜 추출
-function getFileDate(data, filePath) {
-  if (data.date) return new Date(data.date).toISOString().split('T')[0];
-  return fs.statSync(filePath).mtime.toISOString().split('T')[0];
 }
 
 // ==========================================
@@ -54,7 +32,7 @@ function prepareBaseDirectory() {
   if (process.env.TARGET_DIR) return path.resolve(process.env.TARGET_DIR);
 
   console.log('📦 Downloading and extracting source tarball (No .git)...');
-  
+
   if (fs.existsSync(LOCAL_MAIN_DIR)) fs.rmSync(LOCAL_MAIN_DIR, { recursive: true, force: true });
   fs.mkdirSync(LOCAL_MAIN_DIR);
 
@@ -64,9 +42,9 @@ function prepareBaseDirectory() {
     // 1. curl로 tarball을 받아오고, 바로 tar로 추출
     // --strip-components=1로 불필요한 최상위 폴더 구조를 제거합니다.
     const cmd = `curl -L ${archiveUrl} | tar -xz -C "${LOCAL_MAIN_DIR}" --strip-components=1`;
-    
+
     execSync(cmd, { stdio: 'inherit' });
-    
+
     console.log('✨ Extraction complete. Source is ready.');
   } catch (err) {
     console.error('❌ Tarball download failed:', err);
@@ -88,10 +66,9 @@ function parseAbout(baseDir) {
 
   const { data } = matter(fs.readFileSync(aboutPath, 'utf-8'));
   return {
-    name: data.name || "",
-    email: data.email || "",
-    blog: data.blog || "",
-    tagline: data.tagline || "",
+    frontmatter: {
+      ...data
+    },
     contentUrl: `${RAW_URL_ROOT}/about.md` // 링크로 변경
   };
 }
@@ -102,28 +79,20 @@ function parsePortfolio(baseDir) {
   if (!fs.existsSync(portfolioDir)) return [];
 
   const files = globSync(path.join(portfolioDir, '**/*.md').replace(/\\/g, '/'));
-  
+
   return files.map(filePath => {
     const { data } = matter(fs.readFileSync(filePath, 'utf-8'));
     const relativePath = path.relative(baseDir, filePath).replace(/\\/g, '/');
-    
+
     const processedImages = (data.images || []).map(img => ({
       ...img,
       src: img.src ? `${RAW_URL_ROOT}/${img.src.replace(/^\//, '')}` : null
     }));
 
     return {
-      title: data.title || "제목 없음",
-      index: data.index || 0,
-      organization: data.organization || "",
-      role: data.role || "",
-      due: data.due || "",
-      outcome: data.outcome || "",
-      href: data.href || "",
-      description: data.description || "",
-      domain: data.domain || [],
-      skills: data.skills || [],
-      images: processedImages,
+      frontmatter: {
+        ...data
+      },
       slug: path.basename(filePath, '.md'),
       contentUrl: `${RAW_URL_ROOT}/${relativePath}` // 링크로 변경
     };
@@ -135,17 +104,17 @@ function buildCategoryTree(flatPosts) {
   return flatPosts.reduce((acc, curr) => {
     let domainNode = acc.find(d => d.domain === curr.domain);
     if (!domainNode) {
-      domainNode = { domain: curr.domain, domainSlug: curr.domain.toLowerCase(), categories: [] };
+      domainNode = { domain: curr.frontmatter.domain, domainSlug: curr.frontmatter.domain.toLowerCase(), categories: [] };
       acc.push(domainNode);
     }
-    
-    const categorySlug = curr.category.toLowerCase().trim().replace(/[\/\s]+/g, '-');
-    let categoryNode = domainNode.categories.find(c => c.category === curr.category);
+
+    const categorySlug = curr.frontmatter.category.toLowerCase().trim().replace(/[\/\s]+/g, '-');
+    let categoryNode = domainNode.categories.find(c => c.frontmatter.category === curr.frontmatter.category);
     if (!categoryNode) {
-      categoryNode = { category: curr.category, categorySlug, posts: [] };
+      categoryNode = { category: curr.frontmatter.category, categorySlug, posts: [] };
       domainNode.categories.push(categoryNode);
     }
-    
+
     categoryNode.posts.push(curr);
     return acc;
   }, []).sort((a, b) => a.domain.localeCompare(b.domain));
@@ -157,28 +126,25 @@ function parsePosts(baseDir) {
   if (!fs.existsSync(postsDir)) return [];
 
   const files = globSync(path.join(postsDir, '**/*.md').replace(/\\/g, '/'));
-  
+
   const flatPosts = files.map(filePath => {
     const { data, content } = matter(fs.readFileSync(filePath, 'utf-8'));
-    
+
     // relative path를 이용해 나중에 fetch할 주소 생성
     const relativePath = path.relative(baseDir, filePath).replace(/\\/g, '/');
     const contentUrl = `${RAW_URL_ROOT}/${relativePath}`;
 
     return {
-      title: data.title || "제목 없음",
-      date: getFileDate(data, filePath),
-      domain: data.domain || "NoDomain",
-      category: data.category || "Uncategorized",
-      description: data.description || "",
-      thumbnail: data.thumbnail || null,
-      featured: data.featured || false,
+      frontmatter: {
+        ...data
+      },
       slug: path.basename(filePath, '.md'),
       contentUrl: contentUrl, // 본문 대신 URL 제공
       searchContent: sanitizeContent(content) // 검색용 텍스트만 유지
     };
   });
 
+  console.log(flatPosts)
   return buildCategoryTree(flatPosts);
 }
 
