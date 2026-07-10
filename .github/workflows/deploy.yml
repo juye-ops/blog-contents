@@ -1,0 +1,56 @@
+name: Cross-Branch Blog Builder
+
+on:
+  push:
+    branches: [ main ] # 1. main 브랜치에 글이 push 되면 트리거
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      # 2. 현재 main 브랜치의 쌩 마크다운과 이미지들을 로봇 컴퓨터에 내려받습니다.
+      - name: Checkout Markdown Source (main)
+        uses: actions/checkout@v4
+        with:
+          path: workspace # 로봇 컴퓨터 내부의 'workspace' 폴더에 다운로드
+
+      # 3. ⭐️ 마법 발생: engine 브랜치에 있는 빌드 스크립트 코드를 옆방에 따로 내려받습니다.
+      - name: Checkout Build Engine (engine)
+        uses: actions/checkout@v4
+        with:
+          ref: engine
+          path: engine # 'engine' 폴더에 다운로드
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # 4. engine 폴더로 들어가서 파싱 라이브러리들을 설치합니다.
+      - name: Install Build Dependencies
+        run: |
+          cd engine
+          npm install
+
+      # 5. engine의 스크립트를 실행하되, 대상 타겟은 workspace(main 브랜치)로 지정합니다.
+      # 이 실행을 위해 기존 build-metadata.js에서 경로 잡던 BASE_DIR 변수를 아래 환경변수를 읽도록 교체해주면 베스트입니다.
+      - name: Run Build Script
+        env:
+          TARGET_DIR: ${{ github.workspace }}/workspace
+        run: |
+          cd engine
+          node scripts/build-metadata.js
+
+      # 6. 🚀 완성되어 복사된 blog-metadata.json 파일만 'data' 브랜치로 깔끔하게 쏘아 올립니다.
+      - name: Deploy to Data Branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: data
+          publish_dir: ./engine/dist
+          force_orphan: true
+          keep_files: false
+          disable_nojekyll: true
