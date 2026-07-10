@@ -1,0 +1,21 @@
+{
+  "name": "blog-metadata-engine",
+  "version": "1.0.0",
+  "description": "Obsidian markdown parser and metadata generator for remote React blog",
+  "main": "scripts/build-metadata.js",
+  "scripts": {
+    "build": "node scripts/build-metadata.js"
+  },
+  "keywords": [
+    "obsidian",
+    "markdown",
+    "parser",
+    "github-actions"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^10.4.1",
+    "gray-matter": "^4.0.3"
+  }
+}
