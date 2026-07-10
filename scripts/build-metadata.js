@@ -102,11 +102,11 @@ function buildCategoryTree(flatPostsArray) {
     const categorySlug = fm.category.toLowerCase().trim().replace(/[\/\s]+/g, '-');
     let categoryNode = domainNode.categories.find(c => c.category === fm.category);
     if (!categoryNode) {
-      categoryNode = { category: fm.category, categorySlug, slugs: [] };
+      categoryNode = { category: fm.category, categorySlug, posts: [] };
       domainNode.categories.push(categoryNode);
     }
 
-    categoryNode.slugs.push({
+    categoryNode.posts.push({
       slug: curr.slug,
       date: fm.date
     }); 
@@ -117,7 +117,7 @@ function buildCategoryTree(flatPostsArray) {
   // [핵심] 카테고리별로 날짜 기준 정렬
   tree.forEach(domain => {
     domain.categories.forEach(category => {
-      category.slugs.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
+      category.posts.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
     });
   });
 
