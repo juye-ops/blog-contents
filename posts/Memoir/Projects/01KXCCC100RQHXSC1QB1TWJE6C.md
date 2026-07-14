@@ -3,7 +3,7 @@ title: 쿠버네티스 홈랩 구성
 domain: Memoir
 category: Projects
 date: 2026-07-13
-thumbnail:
+thumbnail: ""
 description: |-
   쿠버네티스 테스트베드 및 운영 개인 운영 환경을 위한 홈랩을 구성합니다.
   CNCF가 정의한 클라우드 네이티브 아키텍처를 준수하여 오픈소스 기반 플랫폼을 구축합니다.

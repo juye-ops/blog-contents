@@ -2,9 +2,9 @@
 title: ""
 domain: ""
 category: ""
-date: 2026-06-12
-thumbnail: "/assets/images/image.png"
-description: |- 
-  본문 요약
+date: <% tp.date.now() %>
+thumbnail: ""
+description: ""
 featured: false
 ---
+<% await tp.file.rename(tp.user.ulid()) %>
