@@ -1,7 +1,7 @@
 ---
 name: 김주엽
 email: kjye.ops@gmail.com
-phone: +82 10
+phone:
 blog: https://juye-ops.github.io/
 tagline: |-
   쿠버네티스 기반 DevOps 환경 구축 및 자동화에 특화된 플랫폼 엔지니어입니다.  
