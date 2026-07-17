@@ -54,7 +54,6 @@ function prepareBaseDirectory() {
   return LOCAL_MAIN_DIR;
 }
 
-
 // ==========================================
 // ✍️ 4. 데이터 파싱 및 가공 핵심 함수들 (역할 분리)
 // ==========================================
@@ -88,44 +87,61 @@ function parsePortfolio(baseDir) {
   }).sort((a, b) => a.index - b.index);
 }
 
-// [Posts] 트리 구조화 헬퍼 함수
-function buildCategoryTree(flatPostsArray) {
-  const tree = flatPostsArray.reduce((acc, curr) => {
-    const fm = curr.data.frontmatter; 
-    
-    let domainNode = acc.find(d => d.domain === fm.domain);
-    if (!domainNode) {
-      domainNode = { domain: fm.domain, domainSlug: fm.domain.toLowerCase(), categories: [] };
-      acc.push(domainNode);
-    }
-
-    const categorySlug = fm.category.toLowerCase().trim().replace(/[\/\s]+/g, '-');
-    let categoryNode = domainNode.categories.find(c => c.category === fm.category);
-    if (!categoryNode) {
-      categoryNode = { category: fm.category, categorySlug, posts: [] };
-      domainNode.categories.push(categoryNode);
-    }
-
-    categoryNode.posts.push({
-      slug: curr.slug,
-      date: fm.date
-    }); 
-    
-    return acc;
-  }, []);
-
-  // [핵심] 카테고리별로 날짜 기준 정렬
-  tree.forEach(domain => {
-    domain.categories.forEach(category => {
-      category.posts.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
-    });
-  });
-
-  return tree.sort((a, b) => a.domain.localeCompare(b.domain));
-}
 
 // [Posts] 파싱 메인
 function parsePosts(baseDir) {
+  const preprocessPosts = (posts) => {
+    return posts.map(post => ({
+      ...post,
+      data: {
+        ...post.data,
+        frontmatter: {
+          ...post.data.frontmatter,
+          domain: post.data.frontmatter?.domain || '_NoDomain',
+          category: post.data.frontmatter?.category || '_NoCategory'
+        }
+      }
+    }));
+  };
+
+  // [Posts] 트리 구조화 헬퍼 함수
+  const buildCategoryTree = (flatPostsArray) => {
+    const tree = flatPostsArray.reduce((acc, curr) => {
+      const fm = curr.data.frontmatter;
+
+      let domainNode = acc.find(d => d.domain === fm.domain);
+      if (!domainNode) {
+        domainNode = { domain: fm.domain, domainSlug: fm.domain.toLowerCase(), categories: [] };
+        acc.push(domainNode);
+      }
+
+      const categorySlug = fm.category.toLowerCase().trim().replace(/[\/\s]+/g, '-');
+      let categoryNode = domainNode.categories.find(c => c.category === fm.category);
+      if (!categoryNode) {
+        categoryNode = { category: fm.category, categorySlug, posts: [] };
+        domainNode.categories.push(categoryNode);
+      }
+
+      categoryNode.posts.push({
+        slug: curr.slug,
+        date: fm.date
+      });
+
+      return acc;
+    }, []);
+
+    // [핵심] 카테고리별로 날짜 기준 정렬
+    tree.forEach(domain => {
+      domain.categories.forEach(category => {
+        category.posts.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
+      });
+    });
+
+    return tree.sort((a, b) => a.domain.localeCompare(b.domain));
+  }
+
+
+
   const postsDir = path.join(baseDir, 'posts');
   if (!fs.existsSync(postsDir)) return { treePosts: [], flatPosts: {} };
 
@@ -134,7 +150,12 @@ function parsePosts(baseDir) {
   const flatPostsArray = files.map(filePath => {
     const { data, content } = matter(fs.readFileSync(filePath, 'utf-8'));
     const relativePath = path.relative(baseDir, filePath).replace(/\\/g, '/');
+    // 데이터 정제 (기본값 설정)
+    data.domain = (data.domain || "_NoDomain").toString().trim();
+    data.category = (data.category || "_NoCategory").toString().trim();
+
     const slug = path.basename(filePath, '.md');
+
 
     // 여기서 slug를 제외한 순수 데이터만 구성합니다.
     return {
@@ -175,16 +196,16 @@ async function main() {
   const portfolioData = parsePortfolio(baseDir);
 
   // 분리형 JSON 파일 내보내기
-  if (treePosts.length) 
+  if (treePosts.length)
     fs.writeFileSync(path.join(DIST_DIR, 'posts.tree.json'), JSON.stringify(treePosts, null, 2));
-  
-  if (Object.keys(flatPosts).length) 
+
+  if (Object.keys(flatPosts).length)
     fs.writeFileSync(path.join(DIST_DIR, 'posts.flat.json'), JSON.stringify(flatPosts, null, 2));
 
-  if (aboutData) 
+  if (aboutData)
     fs.writeFileSync(path.join(DIST_DIR, 'about.json'), JSON.stringify(aboutData, null, 2));
-  
-  if (portfolioData.length) 
+
+  if (portfolioData.length)
     fs.writeFileSync(path.join(DIST_DIR, 'portfolio.json'), JSON.stringify(portfolioData, null, 2));
 
   console.log('🚀 [SUCCESS] Metadata separated into tree and flat structures!');
