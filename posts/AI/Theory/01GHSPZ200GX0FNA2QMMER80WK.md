@@ -36,7 +36,7 @@ featured: false
   - False Positive(FP): 검출되지 말아야할 것이 검출됨
   - False Negative(FN): 검출되어야 할 것이 검출되지 않음
 
-<img src="/assets/images/posts/AI/Theory/2022-09-20-ai-basic/confusion_matrix.png" width = 500px>
+<img src="/assets/images/posts/AI/Theory/01GHSPZ200GX0FNA2QMMER80WK/confusion_matrix.png" width = 500px>
 
 - Precision
   - $Precision = \frac{TP}{TP + FP} = \frac{TP}{All-Detections}$
@@ -45,7 +45,7 @@ featured: false
   - $Recall = \frac{TP}{TP + FN} = \frac{TP}{All\ Ground\ Truths}$
   - 모든 정답 Label들에 대한 예측 비율
 
-<img src="/assets/images/posts/AI/Theory/2022-09-20-ai-basic/precision_recall.png" width=500px>
+<img src="/assets/images/posts/AI/Theory/01GHSPZ200GX0FNA2QMMER80WK/precision_recall.png" width=500px>
 
 - PR Curve
   - Ground Truth가 10개라고 가정

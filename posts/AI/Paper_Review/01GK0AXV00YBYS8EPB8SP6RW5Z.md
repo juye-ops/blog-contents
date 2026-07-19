@@ -89,7 +89,7 @@ Random patch에 대해 마스킹 후 재구성
 
 # 제안
 
-![Desktop View](/assets/images/posts/AI/Paper_Review/2022-11-29-paper-MAE/architecture.png)
+![Desktop View](/assets/images/posts/AI/Paper_Review/01GK0AXV00YBYS8EPB8SP6RW5Z/architecture.png)
 _MAE Architecture_
 
 
@@ -176,9 +176,9 @@ _MAE Architecture_
 
 ### Properties
 
-![Desktop View](/assets/images/posts/AI/Paper_Review/2022-11-29-paper-MAE/masking-ratio.png)
+![Desktop View](/assets/images/posts/AI/Paper_Review/01GK0AXV00YBYS8EPB8SP6RW5Z/masking-ratio.png)
 _Masking ratio 별 validation 정확도 비교: Fine-tuning model에 대한 결과(상)와 Linear probing에 대한 결과(하)_
-![Desktop View](/assets/images/posts/AI/Paper_Review/2022-11-29-paper-MAE/masking-result.png)
+![Desktop View](/assets/images/posts/AI/Paper_Review/01GK0AXV00YBYS8EPB8SP6RW5Z/masking-result.png)
 _Reconstructions 결과_
 
 - Masking ratio 별 비교
@@ -189,15 +189,15 @@ _Reconstructions 결과_
 
 |Decoder depth|Decoder width|Mask token|
 |:-:|:-:|:-:|
-|![](/assets/images/posts/AI/Paper_Review/2022-11-29-paper-MAE/ft-lin1.png)|![](/assets/images/posts/AI/Paper_Review/2022-11-29-paper-MAE/ft-lin2.png)|![](/assets/images/posts/AI/Paper_Review/2022-11-29-paper-MAE/ft-lin3.png)|
+|![](/assets/images/posts/AI/Paper_Review/01GK0AXV00YBYS8EPB8SP6RW5Z/ft-lin1.png)|![](/assets/images/posts/AI/Paper_Review/01GK0AXV00YBYS8EPB8SP6RW5Z/ft-lin2.png)|![](/assets/images/posts/AI/Paper_Review/01GK0AXV00YBYS8EPB8SP6RW5Z/ft-lin3.png)|
 
 |Reconstruction target|Data augmentation|Mask sampling|
 |:-:|:-:|:-:|
-|![](/assets/images/posts/AI/Paper_Review/2022-11-29-paper-MAE/ft-lin4.png)|![](/assets/images/posts/AI/Paper_Review/2022-11-29-paper-MAE/ft-lin5.png)|![](/assets/images/posts/AI/Paper_Review/2022-11-29-paper-MAE/ft-lin6.png)|
+|![](/assets/images/posts/AI/Paper_Review/01GK0AXV00YBYS8EPB8SP6RW5Z/ft-lin4.png)|![](/assets/images/posts/AI/Paper_Review/01GK0AXV00YBYS8EPB8SP6RW5Z/ft-lin5.png)|![](/assets/images/posts/AI/Paper_Review/01GK0AXV00YBYS8EPB8SP6RW5Z/ft-lin6.png)|
 
 |Masking 방법|Epochs에 따른 Accuracy|
 |:-:|:-:|
-|![](/assets/images/posts/AI/Paper_Review/2022-11-29-paper-MAE/masking-strategy.png)|![](/assets/images/posts/AI/Paper_Review/2022-11-29-paper-MAE/training-schedules.png)|
+|![](/assets/images/posts/AI/Paper_Review/01GK0AXV00YBYS8EPB8SP6RW5Z/masking-strategy.png)|![](/assets/images/posts/AI/Paper_Review/01GK0AXV00YBYS8EPB8SP6RW5Z/training-schedules.png)|
 
 - Decoder design
   - Decoder의 Depth와 Width에 대해 성능 차이
@@ -206,15 +206,15 @@ _Reconstructions 결과_
   - Data augmentation에 따른 성능 차이
   - Masking 방법에 따른 성능 차이
 
-|![](/assets/images/posts/AI/Paper_Review/2022-11-29-paper-MAE/vs-self-supervised.png)|![](/assets/images/posts/AI/Paper_Review/2022-11-29-paper-MAE/vs-supervised.png)|![](/assets/images/posts/AI/Paper_Review/2022-11-29-paper-MAE/partial-fine-tuning.png)|
+|![](/assets/images/posts/AI/Paper_Review/01GK0AXV00YBYS8EPB8SP6RW5Z/vs-self-supervised.png)|![](/assets/images/posts/AI/Paper_Review/01GK0AXV00YBYS8EPB8SP6RW5Z/vs-supervised.png)|![](/assets/images/posts/AI/Paper_Review/01GK0AXV00YBYS8EPB8SP6RW5Z/partial-fine-tuning.png)|
 |:-:|:-:|:-:|
 |MAE vs Self-supervised pretrained models|MAE vs Supervised pretrained models|Partial fine-tuning|
 
-|![](/assets/images/posts/AI/Paper_Review/2022-11-29-paper-MAE/object-detection-segmentation.png)|![](/assets/images/posts/AI/Paper_Review/2022-11-29-paper-MAE/semantic-segmentation.png)|
+|![](/assets/images/posts/AI/Paper_Review/01GK0AXV00YBYS8EPB8SP6RW5Z/object-detection-segmentation.png)|![](/assets/images/posts/AI/Paper_Review/01GK0AXV00YBYS8EPB8SP6RW5Z/semantic-segmentation.png)|
 |:-:|:-:|
 |Object detection and segmentation|Semantic segmentation|
 
-|![](/assets/images/posts/AI/Paper_Review/2022-11-29-paper-MAE/comparison-with-dataset.png)|![](/assets/images/posts/AI/Paper_Review/2022-11-29-paper-MAE/pixel-vs-token.png)|
+|![](/assets/images/posts/AI/Paper_Review/01GK0AXV00YBYS8EPB8SP6RW5Z/comparison-with-dataset.png)|![](/assets/images/posts/AI/Paper_Review/01GK0AXV00YBYS8EPB8SP6RW5Z/pixel-vs-token.png)|
 |:-:|:-:|
 |Object detection and segmentation|Semantic segmentation|
 

@@ -11,7 +11,7 @@ featured: false
 # 📘 상세 설명
 ---
 
-<img src="/assets/images/posts/Competitions/2021-12-13-competition-musculoskeletal/pamphlet.png" width=400px>
+<img src="/assets/images/posts/Memoir/Competitions/01FPRHDJ00ZSD02P2082FRTVGR/pamphlet.png" width=400px>
 
 
 ## **예선(참가 신청)**
@@ -46,7 +46,7 @@ featured: false
 
 |                                            최종 설계 방법                                             |
 | :---------------------------------------------------------------------------------------------: |
-| <img src="/assets/images/posts/Competitions/2021-12-13-competition-musculoskeletal/method.png"> |
+| <img src="/assets/images/posts/Memoir/Competitions/01FPRHDJ00ZSD02P2082FRTVGR/method.png"> |
 
 - CRNN & Ensemble
   - 시계열 데이터를 학습의 Classic 모델인 ```LSTM``` 기법에 Ensemble 적용
@@ -57,7 +57,7 @@ featured: false
 
 |                                                  최종 모델의 정확도                                                   |
 | :-----------------------------------------------------------------------------------------------------------: |
-| <img src="/assets/images/posts/Competitions/2021-12-13-competition-musculoskeletal/accuracy.png" width=400px> |
+| <img src="/assets/images/posts/Memoir/Competitions/01FPRHDJ00ZSD02P2082FRTVGR/accuracy.png" width=400px> |
 
 - Sequence 의미 파악
   - 모든 팀 구현 실패

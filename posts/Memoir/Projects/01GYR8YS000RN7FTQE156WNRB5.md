@@ -22,7 +22,7 @@ Host PC를 Private CSP로 지정하여 웹 기반 클라우드 개발 환경(IDE
 클라이언트는 Host의 IP 혹은 도메인을 바탕으로 외부에서 접근한 후, IaaS, PaaS 컨테이너를 생성하여 개발을 진행할 수 있습니다.  
 <!-- 나아가, Host PC를 Control plane으로 지정하여 쿠버네티스 환경을 구축하거나 모니터링 기능도 제공합니다.   -->
 
-<img src="/assets/images/posts/Memoir/Projects/2023-04-24-project-on_premiser/systemflow.svg">
+<img src="/assets/images/posts/Memoir/Projects/01GYR8YS000RN7FTQE156WNRB5/systemflow.svg">
 _프로젝트 구조도_
 
 ## **개발 환경 & 아키텍처**
@@ -43,7 +43,7 @@ _프로젝트 구조도_
   - container: 클라이언트가 생성한 컨테이너를 관리하기 위한 Docker in docker 및 `Nginx` Proxying을 통한 `Code-server` IDE 제공
   - database: 지원하는 앱 버전, 클라이언트가 생성한 사용자/프로젝트/개발 컨테이너 정보 등을 관리
 
-<img src="/assets/images/posts/Memoir/Projects/2023-04-24-project-on_premiser/premiser-network-architecture.svg">
+<img src="/assets/images/posts/Memoir/Projects/01GYR8YS000RN7FTQE156WNRB5/premiser-network-architecture.svg">
 
 ## **Load balancer**
 - `Nginx` 기반 Frontend 및 IDE 페이지로 Proxying
@@ -69,7 +69,7 @@ _프로젝트 구조도_
 - `MySQL` 스키마 제작
   - MySQL Workbench를 통한 모델링
 
-<img src="/assets/images/posts/Memoir/Projects/2023-04-24-project-on_premiser/premiser-erd.png">
+<img src="/assets/images/posts/Memoir/Projects/01GYR8YS000RN7FTQE156WNRB5/premiser-erd.png">
 
 ## **Frontend**
 - 로그인

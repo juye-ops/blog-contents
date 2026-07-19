@@ -43,7 +43,7 @@ featured: false
 - 퍼블릭 IPv4 DNS
 - 퍼블릭 IPv4
 
-<img src="/assets/images/posts/Infra/AWS/2023-11-21-aws-ec2-practice/aws-ec2_dashboard.png">
+<img src="/assets/images/posts/Infra/AWS/01HFQJTE00EVNX4SND57H4NE1P/aws-ec2_dashboard.png">
 
 # Putty 접근
 [키 페어](2023-11-21-aws-ec2-practice.md#키-페어) 생성 당시 pem키로 만든 후 Putty로 접근

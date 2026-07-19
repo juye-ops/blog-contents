@@ -32,7 +32,7 @@ featured: false
 # 📜 **개발 방법**
 ---
 ## **Model Pipeline**
-<img src="/assets/images/posts/Memoir/Projects/2023-02-27-project-CAFE/pipeline.png">
+<img src="/assets/images/posts/Memoir/Projects/01GT82PH00V9RT7D2PFS5HR8V5/pipeline.png">
 _모델 파이프라인_
 
 1. 사용자로부터 영상과 영상의 주인공(target) 사진을 입력받는다.
@@ -44,7 +44,7 @@ _모델 파이프라인_
 4. target이 아닌 얼굴들에 대한 정보(from 2-1)를 이용하여, 모든 프레임의 얼굴을 swap 한다.
 
 ## **Face Tracking**
-<img src="/assets/images/posts/Memoir/Projects/2023-02-27-project-CAFE/face-tracking.png">
+<img src="/assets/images/posts/Memoir/Projects/01GT82PH00V9RT7D2PFS5HR8V5/face-tracking.png">
 _Face Tracking 구조_
 
 - `BoT SORT`(Bag of Tricks for Simple Online and Real-time Tracking)
@@ -58,7 +58,7 @@ _Face Tracking 구조_
 
 
 ## **Cartoonize**
-<img src="/assets/images/posts/Memoir/Projects/2023-02-27-project-CAFE/cartoonize.png">
+<img src="/assets/images/posts/Memoir/Projects/01GT82PH00V9RT7D2PFS5HR8V5/cartoonize.png">
 _Cartoonize 항목 및 특징_
 
 - Cartoonize: Neural Style Transfer GAN 기법을 이용한 만화화 기법을 명명
@@ -68,17 +68,17 @@ _Cartoonize 항목 및 특징_
 
 ## **얼굴 유사도 검사**
 
-<img src="/assets/images/posts/Memoir/Projects/2023-02-27-project-CAFE/similarity1.png">
+<img src="/assets/images/posts/Memoir/Projects/01GT82PH00V9RT7D2PFS5HR8V5/similarity1.png">
 _유사도 검사 요약도_
 
 1. 영상에서 tracking을 수행한 각각의 결과(tracklet) 대해 confidence score를 기반으로 tracklet을 대표하는 bbox를 한 개씩 선택한다.
 2. target image와의 similarity를 계산한다.
 3. target image와 계산된 similarity를 통해 같은 인물에 대한 매칭 결과를 얻을 수 있도록 유사도 검사를 두 단계로 수행한다.
 
-<img src="/assets/images/posts/Memoir/Projects/2023-02-27-project-CAFE/similarity2.png">
+<img src="/assets/images/posts/Memoir/Projects/01GT82PH00V9RT7D2PFS5HR8V5/similarity2.png">
 _1차 유사도 검사_
 
-<img src="/assets/images/posts/Memoir/Projects/2023-02-27-project-CAFE/similarity3.png">
+<img src="/assets/images/posts/Memoir/Projects/01GT82PH00V9RT7D2PFS5HR8V5/similarity3.png">
 _2차 유사도 검사_
 
 - 1차 유사도 검사를 통해, target image에 대해 tracking된 image 중 가장 유사도가 높은 얼굴을 추출
@@ -93,11 +93,11 @@ _2차 유사도 검사_
     2. 각 pixel과 영역 중심 pixel 사이의 L2 distance 계산 후 normalize, thresholding 하여 사용
     3. 이미지의 중심 영역은 1로 설정하고, 이미지의 경계에 가까워 질수록 0에 가까운 값을 padding 하여 사용(선별)
 
-<img src="/assets/images/posts/Memoir/Projects/2023-02-27-project-CAFE/edge-smoothing.png">
+<img src="/assets/images/posts/Memoir/Projects/01GT82PH00V9RT7D2PFS5HR8V5/edge-smoothing.png">
 _최종 edge smoothing_
 
 ## **Service Flow**
-<img src="/assets/images/posts/Memoir/Projects/2023-02-27-project-CAFE/serviceflow.png">
+<img src="/assets/images/posts/Memoir/Projects/01GT82PH00V9RT7D2PFS5HR8V5/serviceflow.png">
 _서비스 흐름 요약도_
 
 1. `Streamlit`을 통해 사용자와 상호작용하며, 주인공 이미지와 영상을 입력받고, 결과물을 다운로드할 수 있다.
@@ -110,9 +110,9 @@ _서비스 흐름 요약도_
 
 |Target|Before|After|
 |:-:|:-:|:-:|
-|<img src="/assets/images/posts/Memoir/Projects/2023-02-27-project-CAFE/minji.png" width=150px>|<img src="/assets/images/posts/Memoir/Projects/2023-02-27-project-CAFE/basic_minji.gif">|<img src="/assets/images/posts/Memoir/Projects/2023-02-27-project-CAFE/result_minji.gif">|
-|<img src="/assets/images/posts/Memoir/Projects/2023-02-27-project-CAFE/haerin.png" width=150px>|<img src="/assets/images/posts/Memoir/Projects/2023-02-27-project-CAFE/basic_haerin.gif">|<img src="/assets/images/posts/Memoir/Projects/2023-02-27-project-CAFE/result_haerin.gif">|
-|<img src="/assets/images/posts/Memoir/Projects/2023-02-27-project-CAFE/jaeseok.png" width=150px>|<img src="/assets/images/posts/Memoir/Projects/2023-02-27-project-CAFE/basic_jaeseok.gif">|<img src="/assets/images/posts/Memoir/Projects/2023-02-27-project-CAFE/result_jaeseok.gif">|
+|<img src="/assets/images/posts/Memoir/Projects/01GT82PH00V9RT7D2PFS5HR8V5/minji.png" width=150px>|<img src="/assets/images/posts/Memoir/Projects/01GT82PH00V9RT7D2PFS5HR8V5/basic_minji.gif">|<img src="/assets/images/posts/Memoir/Projects/01GT82PH00V9RT7D2PFS5HR8V5/result_minji.gif">|
+|<img src="/assets/images/posts/Memoir/Projects/01GT82PH00V9RT7D2PFS5HR8V5/haerin.png" width=150px>|<img src="/assets/images/posts/Memoir/Projects/01GT82PH00V9RT7D2PFS5HR8V5/basic_haerin.gif">|<img src="/assets/images/posts/Memoir/Projects/01GT82PH00V9RT7D2PFS5HR8V5/result_haerin.gif">|
+|<img src="/assets/images/posts/Memoir/Projects/01GT82PH00V9RT7D2PFS5HR8V5/jaeseok.png" width=150px>|<img src="/assets/images/posts/Memoir/Projects/01GT82PH00V9RT7D2PFS5HR8V5/basic_jaeseok.gif">|<img src="/assets/images/posts/Memoir/Projects/01GT82PH00V9RT7D2PFS5HR8V5/result_jaeseok.gif">|
 
 ### Discussion
 
