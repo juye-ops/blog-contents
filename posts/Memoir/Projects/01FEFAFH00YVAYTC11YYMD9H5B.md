@@ -25,7 +25,7 @@ featured: false
 
 Document objects 배치 방법에 따라 최대 **94.57%, 69.51%의 mAP@0.5 정확도를 도출**하였습니다.
 
-![[blueprint.png
+![[assets/images/posts/Memoir/Projects/01FEFAFH00YVAYTC11YYMD9H5B/blueprint.png]]
 _프로젝트 요약도_
 
 ## **개발 환경 & 아키텍처**
@@ -72,7 +72,7 @@ _프로젝트 요약도_
   4. 1열과 2열 중 $y$값이 낮은 열에 Object document 배치
   5. 사전에 선정한 $y_{Thres}$ 좌표를 초과할 시 데이터 생성
 
-<img src="/assets/images/posts/Memoir/Projects/2021-09-01-project-document_layout_analysis/RPLCvsRPSLC.png">
+<img src="/assets/images/posts/Memoir/Projects/01FEFAFH00YVAYTC11YYMD9H5B/RPLCvsRPSLC.png">
 _RPLC(좌) 이미지와 RPSLC(우) 이미지_
 
 ## **실험**
@@ -82,7 +82,7 @@ _RPLC(좌) 이미지와 RPSLC(우) 이미지_
 
 |RPLC 데이터 학습 시 추론 결과|RPSLC 데이터 학습 시 추론 결과|
 |:-:|:-:|
-|<img src="/assets/images/posts/Memoir/Projects/2021-09-01-project-document_layout_analysis/RPLC_inference.png">|<img src="/assets/images/posts/Memoir/Projects/2021-09-01-project-document_layout_analysis/RPSLC_inference.png">|
+|<img src="/assets/images/posts/Memoir/Projects/01FEFAFH00YVAYTC11YYMD9H5B/RPLC_inference.png">|<img src="/assets/images/posts/Memoir/Projects/01FEFAFH00YVAYTC11YYMD9H5B/RPSLC_inference.png">|
 
 # 👪 **역할 및 개발 내용**
 ---

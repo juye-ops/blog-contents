@@ -23,7 +23,7 @@ featured: false
 교내외 정보에 대한 웹 크롤링 및 데이터 마이닝을 진행하고 교내 앱에 존재하는 모바일 학생증의 QR코드를 입력한 사용자의 데이터를 바탕으로 전자 게시판을 통하여 사용자에게 맞춤형 정보를 제공합니다.  
 본 프로젝트는 스마트 캠퍼스 구축을 위해 제작되었으며, 금오공과대학교 도서관 지하 1층에 비치되어 있습니다.
 
-<img src="/assets/images/posts/Memoir/Projects/2021-10-01-project-post_recommendation/blueprint.png" width=500px>
+<img src="/assets/images/posts/Memoir/Projects/01FEFAFH00629W8YYAP44QF5GD/blueprint.png" width=500px>
 _프로젝트 구조도_
 
 ## **개발 환경 & 아키텍처**
@@ -85,7 +85,7 @@ _프로젝트 구조도_
     - Key Listener를 통한 QR입력 처리 진행
 
 
-<img src="/assets/images/posts/Memoir/Projects/2021-10-01-project-post_recommendation/system.png" width=475px>
+<img src="/assets/images/posts/Memoir/Projects/01FEFAFH00629W8YYAP44QF5GD/system.png" width=475px>
 _교내 도서관에 설치한 시스템_
 
 # 👪 **역할 및 개발 내용**
@@ -118,7 +118,7 @@ _교내 도서관에 설치한 시스템_
 # 🔗 관련 링크
 ---
 
-<img src="/assets/images/posts/Memoir/Projects/2021-10-01-project-post_recommendation/member.png" width=400px>
+<img src="/assets/images/posts/Memoir/Projects/01FEFAFH00629W8YYAP44QF5GD/member.png" width=400px>
 _교수 및 개발원_
 
 - [금오공대, 'AI·빅데이터실습실' 개소](http://news.unn.net/news/articleView.html?idxno=529832)

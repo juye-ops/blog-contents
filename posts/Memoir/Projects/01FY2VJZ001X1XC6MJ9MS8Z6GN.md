@@ -20,7 +20,7 @@ featured: false
 본 연구는 아동학대 발생 사례가 증가하고, 어린이 대상 AI 연구가 적다는 관점을 토대로 아동 학대에 대한 문제점을 식별하여 **사회적 문제를 해결하는 데에 기여**하고자 진행한 프로젝트입니다.  
 본 프로젝트는 동영상 분석을 기반으로 하여 어린이의 이상 행동을 식별하는 시스템을 제작하였습니다.
 
-<img src="/assets/images/posts/Memoir/Projects/2022-03-14-project-GRU_behavioral_analysis/result.png">
+<img src="/assets/images/posts/Memoir/Projects/01FY2VJZ001X1XC6MJ9MS8Z6GN/result.png">
 
 ## **개발 환경 & 아키텍처**
 - Backend: `Python`
@@ -69,7 +69,7 @@ featured: false
 
 |Video Feature 추출|Feature vector를 바탕으로 한 GRU 모델|
 |:-:|:-:|
-|<img src="/assets/images/posts/Memoir/Projects/2022-03-14-project-GRU_behavioral_analysis/architecture1.png">|<img src="/assets/images/posts/Memoir/Projects/2022-03-14-project-GRU_behavioral_analysis/architecture2.png">|
+|<img src="/assets/images/posts/Memoir/Projects/01FY2VJZ001X1XC6MJ9MS8Z6GN/architecture1.png">|<img src="/assets/images/posts/Memoir/Projects/01FY2VJZ001X1XC6MJ9MS8Z6GN/architecture2.png">|
 
 
 ### **추후 확장 방안**
@@ -108,7 +108,7 @@ featured: false
 모델 같은 경우, 초반에는 사람 별 행동을 분류하기 위해 Tracking 모델을 적극적으로 찾았다.
 객체 별 행동을 통해 학대를 분류하고자 하였으나, 한 영상 내에 Input 크기가 가변적이어야 하는 문제점을 요구하였다.
 
-시간 문제로 인해 기존 진행했던 [경진대회](/posts/competition-musculoskeletal)를 참고하여 분류 Task로 적용하도록 변경되었다.
+시간 문제로 인해 기존 진행했던 [경진대회](/posts/Memoir/Competitions/)를 참고하여 분류 Task로 적용하도록 변경되었다.
 위의 경진대회에서는 ```LSTM```을 사용하였다면 ```GRU``` 모델을 사용하여 **시계열 모델을 다양하게 적용**하고자 하였다.
 
 비록 ```LSTM```과 ```GRU```를 이론적으로만 이해한 채로 연구를 진행하였지만, 결과는 성공적으로 보일 수 있었다.
