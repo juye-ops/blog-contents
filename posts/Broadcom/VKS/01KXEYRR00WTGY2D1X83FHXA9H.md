@@ -1,7 +1,7 @@
 ---
 title: "[VKS]vSphere Kubernetes Service"
-domain: ""
-category: ""
+domain: "Broadcom"
+category: "VKS"
 date: 2026-07-14
 thumbnail: ""
 description: ""
