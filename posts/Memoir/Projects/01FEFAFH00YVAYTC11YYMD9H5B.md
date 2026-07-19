@@ -25,7 +25,7 @@ featured: false
 
 Document objects 배치 방법에 따라 최대 **94.57%, 69.51%의 mAP@0.5 정확도를 도출**하였습니다.
 
-<img src="/assets/images/posts/Memoir/Projects/2021-09-01-project-document_layout_analysis/blueprint.png">
+![[blueprint.png
 _프로젝트 요약도_
 
 ## **개발 환경 & 아키텍처**

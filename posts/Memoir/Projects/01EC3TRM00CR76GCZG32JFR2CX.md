@@ -39,7 +39,7 @@ featured: false
 - 전동 킥보드에 스마트폰 거치대 결합
 - 운전자 누구나 **즉석으로 이용**할 수 있도록 스마트폰의 동영상 촬영 기능을 활용하여 구현
 
-<img src="/assets/images/posts/Memoir/Projects/2020-07-01-project-personal_mobility/hardware.png">
+![[hardware.png]]
 _하드웨어 구성_
 
 ## **데이터셋 구축**
