@@ -1,0 +1,718 @@
+[
+  {
+    "domain": "AI",
+    "domainSlug": "ai",
+    "categories": [
+      {
+        "category": "Paper Review",
+        "categorySlug": "paper-review",
+        "posts": [
+          {
+            "slug": "01GK0AXV00YBYS8EPB8SP6RW5Z",
+            "date": "2022-11-29T00:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "category": "Theory",
+        "categorySlug": "theory",
+        "posts": [
+          {
+            "slug": "01GHSPZ200GX0FNA2QMMER80WK",
+            "date": "2022-11-14T00:00:00.000Z"
+          },
+          {
+            "slug": "01GEG4NK00T10F5VR749X6HVPT",
+            "date": "2022-10-04T00:00:00.000Z"
+          },
+          {
+            "slug": "01GEG4NK00M59DSAH2C6EH668R",
+            "date": "2022-10-04T00:00:00.000Z"
+          },
+          {
+            "slug": "01GEG4NK0071WG7X55M8RTGD87",
+            "date": "2022-10-04T00:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "category": "MLOps",
+        "categorySlug": "mlops",
+        "posts": [
+          {
+            "slug": "01GHFDC60086S17XQJB9SFW864",
+            "date": "2022-11-10T00:00:00.000Z"
+          },
+          {
+            "slug": "01GHFDC6001C8T1FQZNEF9D2QF",
+            "date": "2022-11-10T00:00:00.000Z"
+          },
+          {
+            "slug": "01GHA8JR00Y2WK91N3N9NB9JPV",
+            "date": "2022-11-08T00:00:00.000Z"
+          },
+          {
+            "slug": "01GEG4NK00RFNQAT1ABF7Q114J",
+            "date": "2022-10-04T00:00:00.000Z"
+          },
+          {
+            "slug": "01GE38P000MV2PJ2EMHVCK6PQE",
+            "date": "2022-09-29T00:00:00.000Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "domain": "Broadcom",
+    "domainSlug": "broadcom",
+    "categories": [
+      {
+        "category": "VKS",
+        "categorySlug": "vks",
+        "posts": [
+          {
+            "slug": "01KXEYRR00WTGY2D1X83FHXA9H",
+            "date": "2026-07-14T00:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "category": "VCF",
+        "categorySlug": "vcf",
+        "posts": [
+          {
+            "slug": "01KXEYRR00896GY05S07NBSX00",
+            "date": "2026-07-14T00:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "category": "Private AI",
+        "categorySlug": "private-ai",
+        "posts": [
+          {
+            "slug": "01KXEYRR00RGKXVKXRD2NZH2Y4",
+            "date": "2026-07-14T00:00:00.000Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "domain": "DevOps",
+    "domainSlug": "devops",
+    "categories": [
+      {
+        "category": "Git",
+        "categorySlug": "git",
+        "posts": [
+          {
+            "slug": "01GPCFM100HHQ0Y6VYAQ8K5DFN",
+            "date": "2023-01-10T00:00:00.000Z"
+          },
+          {
+            "slug": "01GP4RDW005DHAPW8B904GNW8Q",
+            "date": "2023-01-07T00:00:00.000Z"
+          },
+          {
+            "slug": "01GP261500H87TT1WPF1ZGSYW8",
+            "date": "2023-01-06T00:00:00.000Z"
+          },
+          {
+            "slug": "01GM4CFX004Y9WPYDMT8QHJE90",
+            "date": "2022-12-13T00:00:00.000Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "domain": "Infra",
+    "domainSlug": "infra",
+    "categories": [
+      {
+        "category": "Network",
+        "categorySlug": "network",
+        "posts": [
+          {
+            "slug": "01HRQZAY00B5WAT0228EM40N05",
+            "date": "2024-03-12T00:00:00.000Z"
+          },
+          {
+            "slug": "01HRG84S008WJGVMMG9QFZMHGJ",
+            "date": "2024-03-09T00:00:00.000Z"
+          },
+          {
+            "slug": "01HR3C56009QM8SA5DWVRSM5FC",
+            "date": "2024-03-04T00:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "category": "AWS",
+        "categorySlug": "aws",
+        "posts": [
+          {
+            "slug": "01HGVMCG00QS8Y76HPMS44K13B",
+            "date": "2023-12-05T00:00:00.000Z"
+          },
+          {
+            "slug": "01HGVMCG00GQFBMVPQ3SGQX4X7",
+            "date": "2023-12-05T00:00:00.000Z"
+          },
+          {
+            "slug": "01HGC6060054FTD6YCHCCJBP5G",
+            "date": "2023-11-29T00:00:00.000Z"
+          },
+          {
+            "slug": "01HGC606004N2JY63W4D4KQ5BG",
+            "date": "2023-11-29T00:00:00.000Z"
+          },
+          {
+            "slug": "01HGC606003K2T2YV1N31JDJCQ",
+            "date": "2023-11-29T00:00:00.000Z"
+          },
+          {
+            "slug": "01HG9KKF00XPVW50DSRBGGEESX",
+            "date": "2023-11-28T00:00:00.000Z"
+          },
+          {
+            "slug": "01HG9KKF001CP9CNA6M8NSRC0M",
+            "date": "2023-11-28T00:00:00.000Z"
+          },
+          {
+            "slug": "01HG716R00ZJX3BTY0WP9G8M5S",
+            "date": "2023-11-27T00:00:00.000Z"
+          },
+          {
+            "slug": "01HG716R00T5VR4DMFXQ6KBGGD",
+            "date": "2023-11-27T00:00:00.000Z"
+          },
+          {
+            "slug": "01HG716R00G7MHPZNEPD8JK4WX",
+            "date": "2023-11-27T00:00:00.000Z"
+          },
+          {
+            "slug": "01HG4ET100ACANCAJ525V6TXNE",
+            "date": "2023-11-26T00:00:00.000Z"
+          },
+          {
+            "slug": "01HG1WDA005Z2PS0933QPAAKWT",
+            "date": "2023-11-25T00:00:00.000Z"
+          },
+          {
+            "slug": "01HFZA0K00F38CTDK1YESA51DK",
+            "date": "2023-11-24T00:00:00.000Z"
+          },
+          {
+            "slug": "01HFWQKW00YFEFF2T98M4RDSRW",
+            "date": "2023-11-23T00:00:00.000Z"
+          },
+          {
+            "slug": "01HFWQKW00MQM4MCEF2ADCGZPV",
+            "date": "2023-11-23T00:00:00.000Z"
+          },
+          {
+            "slug": "01HFT57500R5R894JNKH31W838",
+            "date": "2023-11-22T00:00:00.000Z"
+          },
+          {
+            "slug": "01HFQJTE00Q5SGQ1G4JZKVRYED",
+            "date": "2023-11-21T00:00:00.000Z"
+          },
+          {
+            "slug": "01HFQJTE00EVNX4SND57H4NE1P",
+            "date": "2023-11-21T00:00:00.000Z"
+          },
+          {
+            "slug": "01HFN0DQ00V447BFDBKKGRNZ99",
+            "date": "2023-11-20T00:00:00.000Z"
+          },
+          {
+            "slug": "01HFN0DQ00R12BY6XC9JDN7E31",
+            "date": "2023-11-20T00:00:00.000Z"
+          },
+          {
+            "slug": "01GQDYSC00FG8YR1TAFT7HADGP",
+            "date": "2023-01-23T00:00:00.000Z"
+          },
+          {
+            "slug": "01GQDYSC00EWRNZSCVCEHGK1MY",
+            "date": "2023-01-23T00:00:00.000Z"
+          },
+          {
+            "slug": "01GQDYSC00ESMHG0DW1G43DBT0",
+            "date": "2023-01-23T00:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "category": "Theory",
+        "categorySlug": "theory",
+        "posts": [
+          {
+            "slug": "01HFT575002MWGXFVX29XYADDW",
+            "date": "2023-11-22T00:00:00.000Z"
+          },
+          {
+            "slug": "01GP9X7A009RRH99N3PNWVGK87",
+            "date": "2023-01-09T00:00:00.000Z"
+          },
+          {
+            "slug": "01GNNA1J007X2PZ94FNNADW1G8",
+            "date": "2023-01-01T00:00:00.000Z"
+          },
+          {
+            "slug": "01GCWMQ700WE3QTZBWPY6J1XMY",
+            "date": "2022-09-14T00:00:00.000Z"
+          },
+          {
+            "slug": "01GCQFXS00KRCEP2AA3AB7M24G",
+            "date": "2022-09-12T00:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "category": "Kubernetes",
+        "categorySlug": "kubernetes",
+        "posts": [
+          {
+            "slug": "01H12YFM00551F88RKS8YJH9PH",
+            "date": "2023-05-23T00:00:00.000Z"
+          },
+          {
+            "slug": "01H10C2X00QZN8WT8P85PFRVMB",
+            "date": "2023-05-22T00:00:00.000Z"
+          },
+          {
+            "slug": "01H10C2X00J1WNFRA7NK2WQA7T",
+            "date": "2023-05-22T00:00:00.000Z"
+          },
+          {
+            "slug": "01H0XSP600Y0XGTA1Z0K0QFMAX",
+            "date": "2023-05-21T00:00:00.000Z"
+          },
+          {
+            "slug": "01H01FA900J0G8X6Q5QPC3QPXB",
+            "date": "2023-05-10T00:00:00.000Z"
+          },
+          {
+            "slug": "01H01FA900GPEH792A1GJT9RHV",
+            "date": "2023-05-10T00:00:00.000Z"
+          },
+          {
+            "slug": "01GZYWXJ00X64934EA6M43ARCJ",
+            "date": "2023-05-09T00:00:00.000Z"
+          },
+          {
+            "slug": "01GZYWXJ00VV9FPG6MTF338WGQ",
+            "date": "2023-05-09T00:00:00.000Z"
+          },
+          {
+            "slug": "01GZYWXJ00F5N2CE0AMTJZCXWZ",
+            "date": "2023-05-09T00:00:00.000Z"
+          },
+          {
+            "slug": "01GZWAGV00RMYQ77JYS42AFYW3",
+            "date": "2023-05-08T00:00:00.000Z"
+          },
+          {
+            "slug": "01GZWAGV00KST3JNHVR11MA0HF",
+            "date": "2023-05-08T00:00:00.000Z"
+          },
+          {
+            "slug": "01GZWAGV00FJ2F8HSM3R02AJBB",
+            "date": "2023-05-08T00:00:00.000Z"
+          },
+          {
+            "slug": "01GZWAGV007ZJYVMHW88F9J3AD",
+            "date": "2023-05-08T00:00:00.000Z"
+          },
+          {
+            "slug": "01GZSR4400YRCP29VZPRC12EPH",
+            "date": "2023-05-07T00:00:00.000Z"
+          },
+          {
+            "slug": "01GZSR4400VNMWQP7S81DNZ4P6",
+            "date": "2023-05-07T00:00:00.000Z"
+          },
+          {
+            "slug": "01GZSR4400GNZVJTV5T003S5MD",
+            "date": "2023-05-07T00:00:00.000Z"
+          },
+          {
+            "slug": "01GZMKAP006Y9RVHQMPJAMHA1X",
+            "date": "2023-05-05T00:00:00.000Z"
+          },
+          {
+            "slug": "01GZCW4H002MSY68KFNZDMKFAX",
+            "date": "2023-05-02T00:00:00.000Z"
+          },
+          {
+            "slug": "01GYR8YS00CDTX45VKXNEWWVNB",
+            "date": "2023-04-24T00:00:00.000Z"
+          },
+          {
+            "slug": "01GYNPJ2009KKH1DFZMQC1J8D3",
+            "date": "2023-04-23T00:00:00.000Z"
+          },
+          {
+            "slug": "01GYGHRM00N5FM94TY95YJAFK9",
+            "date": "2023-04-21T00:00:00.000Z"
+          },
+          {
+            "slug": "01GYDZBX00QW099X17VG6TC0W3",
+            "date": "2023-04-20T00:00:00.000Z"
+          },
+          {
+            "slug": "01GYDZBX004HYER1QD30C8JFZR",
+            "date": "2023-04-20T00:00:00.000Z"
+          },
+          {
+            "slug": "01GYBCZ600QQPYW54P52D8V4VW",
+            "date": "2023-04-19T00:00:00.000Z"
+          },
+          {
+            "slug": "01GYBCZ600QCWEA85MAV9Z6KEB",
+            "date": "2023-04-19T00:00:00.000Z"
+          },
+          {
+            "slug": "01GYBCZ600NGBG5BN9VV25XZPE",
+            "date": "2023-04-19T00:00:00.000Z"
+          },
+          {
+            "slug": "01GYBCZ600KTKGF33JZ68TSJY8",
+            "date": "2023-04-19T00:00:00.000Z"
+          },
+          {
+            "slug": "01GYBCZ600JKRRMG6BASDVQM87",
+            "date": "2023-04-19T00:00:00.000Z"
+          },
+          {
+            "slug": "01GYBCZ6004GE2JJPFYSYC4CYK",
+            "date": "2023-04-19T00:00:00.000Z"
+          },
+          {
+            "slug": "01GY8TJF00MRFHRXGD6M7772JA",
+            "date": "2023-04-18T00:00:00.000Z"
+          },
+          {
+            "slug": "01GY8TJF006QGM01HVWD8NV8VT",
+            "date": "2023-04-18T00:00:00.000Z"
+          },
+          {
+            "slug": "01GY8TJF005NPZWS6SQMVQPTRD",
+            "date": "2023-04-18T00:00:00.000Z"
+          },
+          {
+            "slug": "01GY8TJF0098KF9RYAHN5M2SEE",
+            "date": "2023-04-18T00:00:00.000Z"
+          },
+          {
+            "slug": "01GY13CA00XMCNYP906EK5KK53",
+            "date": "2023-04-15T00:00:00.000Z"
+          },
+          {
+            "slug": "01GQGH630069MC3G3EB79M9G3C",
+            "date": "2023-01-24T00:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "category": "VirtualBox",
+        "categorySlug": "virtualbox",
+        "posts": [
+          {
+            "slug": "01GJBQR300114KRHTFVTP5F2YC",
+            "date": "2022-11-21T00:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "category": "OS",
+        "categorySlug": "os",
+        "posts": [
+          {
+            "slug": "01GJBQR300Y419ZZCMC6AXF73A",
+            "date": "2022-11-21T00:00:00.000Z"
+          },
+          {
+            "slug": "01GJBQR300PQQ9RB15KKRQ4XWQ",
+            "date": "2022-11-21T00:00:00.000Z"
+          },
+          {
+            "slug": "01GJBQR3005M6QA01PNB6SHAV1",
+            "date": "2022-11-21T00:00:00.000Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "domain": "Memoir",
+    "domainSlug": "memoir",
+    "categories": [
+      {
+        "category": "Projects",
+        "categorySlug": "projects",
+        "posts": [
+          {
+            "slug": "01KY7M2AZ51BQG0FMBK5NR7XYJ",
+            "date": "2026-07-23T00:00:00.000Z"
+          },
+          {
+            "slug": "01KXCCC100RQHXSC1QB1TWJE6C",
+            "date": "2026-07-13T00:00:00.000Z"
+          },
+          {
+            "slug": "01HR5YHX00DCQAC267MDEW7Y5X",
+            "date": "2024-03-05T00:00:00.000Z"
+          },
+          {
+            "slug": "01GYR8YS000RN7FTQE156WNRB5",
+            "date": "2023-04-24T00:00:00.000Z"
+          },
+          {
+            "slug": "01GT82PH00V9RT7D2PFS5HR8V5",
+            "date": "2023-02-27T00:00:00.000Z"
+          },
+          {
+            "slug": "01FY2VJZ001X1XC6MJ9MS8Z6GN",
+            "date": "2022-03-14T00:00:00.000Z"
+          },
+          {
+            "slug": "01FEFAFH00YVAYTC11YYMD9H5B",
+            "date": "2021-09-01T00:00:00.000Z"
+          },
+          {
+            "slug": "01FEFAFH00629W8YYAP44QF5GD",
+            "date": "2021-09-01T00:00:00.000Z"
+          },
+          {
+            "slug": "01ETXKWW008H2BXMYTSSCVPY88",
+            "date": "2021-01-01T00:00:00.000Z"
+          },
+          {
+            "slug": "01EKGQAR00Q4G4VBKAV8X0KK1Q",
+            "date": "2020-10-01T00:00:00.000Z"
+          },
+          {
+            "slug": "01EC3TRM00CR76GCZG32JFR2CX",
+            "date": "2020-07-01T00:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "category": "Lecture",
+        "categorySlug": "lecture",
+        "posts": [
+          {
+            "slug": "01HGY6S700DJ4W9A7EFFJGCP6Z",
+            "date": "2023-12-06T00:00:00.000Z"
+          },
+          {
+            "slug": "01H15GWB00JPZD3SJV41TE01PP",
+            "date": "2023-05-24T00:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "category": "Boostcamp",
+        "categorySlug": "boostcamp",
+        "posts": [
+          {
+            "slug": "01GN0PVT00ET7ZQ0VZABXSWPKK",
+            "date": "2022-12-24T00:00:00.000Z"
+          },
+          {
+            "slug": "01GMEP2S00SRWW2AD3N01CKZVV",
+            "date": "2022-12-17T00:00:00.000Z"
+          },
+          {
+            "slug": "01GKWN9R00Z67MG53M2EDJCDZC",
+            "date": "2022-12-10T00:00:00.000Z"
+          },
+          {
+            "slug": "01GKAMGQ00N5578CVHX0MRR0T0",
+            "date": "2022-12-03T00:00:00.000Z"
+          },
+          {
+            "slug": "01GJV64D0014WFXMX03Z6RX6JA",
+            "date": "2022-11-27T00:00:00.000Z"
+          },
+          {
+            "slug": "01GJ6JYN00Y4B64909YEM91K4S",
+            "date": "2022-11-19T00:00:00.000Z"
+          },
+          {
+            "slug": "01GHHZRX00QD0EM77CV5GFFVH9",
+            "date": "2022-11-11T00:00:00.000Z"
+          },
+          {
+            "slug": "01GGZYZW00NYXRT0TMQCPFQRVT",
+            "date": "2022-11-04T00:00:00.000Z"
+          },
+          {
+            "slug": "01GGDY6V007FTYAAZHJFCB4JZN",
+            "date": "2022-10-28T00:00:00.000Z"
+          },
+          {
+            "slug": "01GFVXDT00FEC807EZ7VBTWB5Z",
+            "date": "2022-10-21T00:00:00.000Z"
+          },
+          {
+            "slug": "01GF7A820054G7BZAY85E4EQ3Q",
+            "date": "2022-10-13T00:00:00.000Z"
+          },
+          {
+            "slug": "01GEQVVR00KWBXWHPVGM6RF2MQ",
+            "date": "2022-10-07T00:00:00.000Z"
+          },
+          {
+            "slug": "01GE5V2Q00JHTVXFA1040KDZQZ",
+            "date": "2022-09-30T00:00:00.000Z"
+          },
+          {
+            "slug": "01GCMXH2005657N7FR8D0WT2P0",
+            "date": "2022-09-11T00:00:00.000Z"
+          },
+          {
+            "slug": "01FVXAVJ00APJBD8FDKRR8QBWP",
+            "date": "2022-02-15T00:00:00.000Z"
+          },
+          {
+            "slug": "01FVGEVZ00F18KQB5KBDD3B7VZ",
+            "date": "2022-02-10T00:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "category": "Competitions",
+        "categorySlug": "competitions",
+        "posts": [
+          {
+            "slug": "01FPRHDJ00ZSD02P2082FRTVGR",
+            "date": "2021-12-13T00:00:00.000Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "domain": "Python",
+    "domainSlug": "python",
+    "categories": [
+      {
+        "category": "Pydantic",
+        "categorySlug": "pydantic",
+        "posts": [
+          {
+            "slug": "01GPF20R00YEGAND5SXAX3VDJS",
+            "date": "2023-01-11T00:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "category": "Poetry",
+        "categorySlug": "poetry",
+        "posts": [
+          {
+            "slug": "01GPF20R00G7WGFQ9SR7J51E9Z",
+            "date": "2023-01-11T00:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "category": "FastAPI",
+        "categorySlug": "fastapi",
+        "posts": [
+          {
+            "slug": "01GPF20R00XDDPT45RVGRWNES6",
+            "date": "2023-01-11T00:00:00.000Z"
+          },
+          {
+            "slug": "01GPF20R00W6QYDV51YDA1PHX4",
+            "date": "2023-01-11T00:00:00.000Z"
+          },
+          {
+            "slug": "01GPF20R00R8XAMTBY3Q0CB2ZH",
+            "date": "2023-01-11T00:00:00.000Z"
+          },
+          {
+            "slug": "01GPF20R005348TNSFT0FD5JRM",
+            "date": "2023-01-11T00:00:00.000Z"
+          },
+          {
+            "slug": "01GPF20R004J2E1R0C0BB0FH9W",
+            "date": "2023-01-11T00:00:00.000Z"
+          },
+          {
+            "slug": "01GPF20R002PW07EGRF7X4BSK8",
+            "date": "2023-01-11T00:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "category": "Anaconda",
+        "categorySlug": "anaconda",
+        "posts": [
+          {
+            "slug": "01GKJBPW00VN6C54HQMBJ012J4",
+            "date": "2022-12-06T00:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "category": "Pytorch",
+        "categorySlug": "pytorch",
+        "posts": [
+          {
+            "slug": "01GDY3WJ00AG7MZ02BC9T9DNCZ",
+            "date": "2022-09-27T00:00:00.000Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "domain": "Qualification",
+    "domainSlug": "qualification",
+    "categories": [
+      {
+        "category": "OPIc",
+        "categorySlug": "opic",
+        "posts": [
+          {
+            "slug": "01H53PBJ00RY5RZ6W4F6FN81XV",
+            "date": "2023-07-12T00:00:00.000Z"
+          },
+          {
+            "slug": "01H53PBJ00GZ5KY0QGF97RTWE9",
+            "date": "2023-07-12T00:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "category": "CS",
+        "categorySlug": "cs",
+        "posts": [
+          {
+            "slug": "01GT82PH0048072VQSQTYFQ80M",
+            "date": "2023-02-27T00:00:00.000Z"
+          }
+        ]
+      },
+      {
+        "category": "Career",
+        "categorySlug": "career",
+        "posts": [
+          {
+            "slug": "01GPVY0B002GR2967N4T6NZHHH",
+            "date": "2023-01-16T00:00:00.000Z"
+          }
+        ]
+      }
+    ]
+  }
+]
