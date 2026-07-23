@@ -1,13 +1,13 @@
 ---
 title: ""
-domain: "Memoir"
-category: "Projects"
-date: <% tp.date.now() %>
+domain: Memoir
+category: Projects
+date: 2026-07-23
 thumbnail: ""
 description: ""
 featured: false
 ---
-<% await tp.file.rename(tp.user.ulid()) %>
+
 
 >[!info] 프로젝트 정보
 > - 개발 기간: 
