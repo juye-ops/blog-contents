@@ -16,7 +16,9 @@ featured: false
 # 📘 **프로젝트 소개**
 ## **개요**
 본 프로젝트에서는 다양한 오픈소스 솔루션을 결합하여 환경에 제약 없이 클러스터 생성을 자동화할 수 있는 방안을 제시합니다.
-쿠버네티스를 운영하기 위한 솔루션은 여럿 있으며, 그중 오픈소스로 클러스터 관리 툴로 유명한 Rancher는 CNCF의 `Certified Kubernetes - Distribution` 소프트웨어로 등록되어 있습니다. 특히 여럿 클라우드 환경에서의 프로비저닝과 여럿 오픈소스 솔루션을 지원하는 점이 강력한 장점으로 꼽히고 있습니다. 하지만 결국엔 Rancher가 지원하는 Node Driver가 있어야 하며, SUSE 생태계에 강력히 종속되어 있어 라이선스에 대한 잠재적인 우려가 존재합니다. 따라서 CNCF의 Argo와 OpenTofu, Kubernetes Sigs의 Cluster API를 기반으로 한 오픈소스와 ~~HashiCorp의 Terraform을 바탕으로~~
+쿠버네티스를 운영하기 위한 솔루션은 여럿 있으며, 그중 오픈소스로 클러스터 관리 툴로 유명한 Rancher는 CNCF의 `Certified Kubernetes - Distribution` 소프트웨어로 등록되어 있습니다. 특히 여럿 클라우드 환경에서의 프로비저닝과 여럿 오픈소스 솔루션을 지원하는 점이 강력한 장점으로 꼽히고 있습니다. 하지만 결국엔 Rancher가 지원하는 Node Driver가 있어야 하며, SUSE 생태계에 강력히 종속되어 있어 라이선스에 대한 잠재적인 우려가 존재합니다. 따라서 CNCF의 Argo와 OpenTofu, Kubernetes Sigs의 Cluster API를 기반으로 한 오픈소스 기반 쿠버네티스 클러스터 프로비저너를 구현합니다.
+
+> 기존엔 널리 사용되는 Terraform을 고안했으나, 마찬가지로 Hashicorp 라이선스 정책의 한계로 오픈소스인 OpenTofu를 결정했습니다.
 
 ## **개발 환경 & 아키텍처**
 - 개발 환경 & 아키텍처
