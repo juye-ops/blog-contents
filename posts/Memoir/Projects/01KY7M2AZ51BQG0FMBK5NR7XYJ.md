@@ -58,7 +58,6 @@ featured: true
 개인 개발 환경으로 이미 Proxmox를 사용하고 있으며, 현재 회사에서는 VCF9의 Supervisor를 통해 VKS로 쿠버네티스의 멀티 클러스터 환경을 고객사에게 제공하고 있습니다. 해당 아키텍처가 Harvester의 구조와 유사하게 HCI 구조이기 때문에 쿠버네티스 형태로 OS를 관리할 수 있다는 점이 용이하다고 판단하였습니다.
 
 ### 3-2. 비교
-
 #### Proxmox
 - 장점
 	- 유휴 메모리 2GB 내외
@@ -74,7 +73,10 @@ featured: true
 	- Kubernetes 명령어로 Hypervisor 제어
 	- HCI를 위한 다양한 오픈소스를 Add-on 형태로 지원
 - 단점
-	- 유휴 메로리 9GB 내외(Mon)
+	- 유휴 메로리 9GB 내외(Monitoring Add-on 배포 시 12GB 내외)
+	- Rancher 별도 관리 필요
+
+### 3-3. 
 
 
 ---
