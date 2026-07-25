@@ -42,13 +42,23 @@ featured: true
 
 ## 1. Kubernetes 컴포넌트 선별
 ### 1-1. Cluster API
-Cluster API는 쿠버네티스에서 Cluster, Machine 등에 대한 리소스를 관리하는 Kubernetes-Sig의 오픈소스 입니다. 이를 통해 쿠버네티스 클러스터를 프로비저닝 하고 제어할 수 있도록 구현하고자 합니다. 여럿 오픈소스가 있으며 
+Cluster API는 쿠버네티스에서 Cluster, Machine 등에 대한 리소스를 관리하는 Kubernetes-Sig의 오픈소스 입니다. 이를 통해 쿠버네티스 클러스터를 프로비저닝 하고 제어할 수 있도록 구현하고자 합니다.
 
 ### 1-2. Argo Project
-Argo는 CNCF의 Graduated 프로젝트로서, 대표적으로 ArgoCD가 있습니다. 초반 구상에는 ArgoCD
+Argo는 CNCF의 Graduated 프로젝트로서, 대표적으로 ArgoCD가 있습니다.
+
+#### ArgoCD
+Cluster 혹은 Machine 리소스를 Helm Chart로 배포하면 그를 바탕으로 쿠버네티스의 리소스를 관리하고자 합니다.
+
+#### Argo Events
+ArgoCD에서 배포된 Cluster, Machine등의 리소스를 감지하여 Machine 생성을 준비합니다.
+
+#### Argo Workflow
+Argo Events를 통해 리소스가 감지되면 이를 바탕으로 Machine에 대한  초기 Initializing 
 
 
 ## 2. IaC 선별
+구상 초반엔 Terraform을 써서
 
 
 ## 3. HyperVisor 비교 및 선별
