@@ -42,7 +42,7 @@ featured: true
 
 ## 1. Kubernetes 컴포넌트 선별
 ### 1-1. Cluster API
-Cluster API는 쿠버네티스에서 Cluster, Machine 등에 대한 리소스를 관리하는 Kubernetes-Sig의 오픈소스 입니다. 이를 통해 
+Cluster API는 쿠버네티스에서 Cluster, Machine 등에 대한 리소스를 관리하는 Kubernetes-Sig의 오픈소스 입니다. 이를 통해 쿠버네티스 클러스터를 프로비저닝 하고 제어할 수 있도록 구현하고자 합니다.
 
 ### 1-2. Argo Project
 Argo는 CNCF의 Graduated 프로젝트로서, 대표적으로 ArgoCD가 있습니다. 초반 구상에는 ArgoCD
@@ -52,8 +52,7 @@ Argo는 CNCF의 Graduated 프로젝트로서, 대표적으로 ArgoCD가 있습�
 
 
 ## 3. HyperVisor 비교 및 선별
-쿠버네티스의 VM을 프로비저닝 하기 위한 Hypervisor는 IaC로의 프로비저닝 지원 여부에 종속되어 있어 중요도는 낮습니다. 따라서 개발 테스트 용으로 이용하기 위해 적은 리소스를 소요하는 Hypervisor를 선별하였습니다. [[01HR5YHX00DCQAC267MDEW7Y5X|하이브리드 클라우드 구축]]에서 클라우드 및 Hypervisor 환경을 비교했으며, 이를 바탕으로 
-결과적으로 기존에 사용하던 Proxmox를 선정하였습니다.
+쿠버네티스의 VM을 프로비저닝 하기 위한 Hypervisor는 IaC로의 프로비저닝 지원 여부에 종속되어 있어 중요도는 낮습니다. 따라서 개발 테스트 용으로 이용하기 위해 적은 리소스를 소요하는 Hypervisor를 선별하였습니다. [[01HR5YHX00DCQAC267MDEW7Y5X|하이브리드 클라우드 구축]]에서 클라우드 및 Hypervisor 환경을 비교했으며, 이번 프로젝트에서 해당 결과에 더해 Harvester에 대한 비교를 진행했습니다. 결과적으로 기존에 사용하던 Proxmox를 선정하였습니다.
 
 비교대상
 - Proxmox
