@@ -58,7 +58,7 @@ Argo Events를 통해 리소스가 감지되면 이를 바탕으로 Machine을 �
 
 
 ## 2. IaC 선별
-구상 초반엔 Terraform을 써서
+구상 초반엔 Terraform을 써서 
 
 
 ## 3. HyperVisor 비교 및 선별
