@@ -41,6 +41,8 @@ featured: true
 > [!quote] 참조 용 콜아웃(필요 없을 시 제거)
 
 ## 1. Kubernetes 컴포넌트 선별
+### 1-1. Argo Project
+Argo는 CNCF의 Graduated 프로젝트로
 
 
 ## 2. IaC 선별
@@ -75,9 +77,6 @@ featured: true
 - 단점
 	- 유휴 메로리 9GB 내외(Monitoring Add-on 배포 시 12GB 내외)
 	- Rancher 별도 관리 필요
-
-### 3-3. 
-
 
 ---
 
