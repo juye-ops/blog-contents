@@ -41,8 +41,11 @@ featured: true
 > [!quote] 참조 용 콜아웃(필요 없을 시 제거)
 
 ## 1. Kubernetes 컴포넌트 선별
-### 1-1. Argo Project
-Argo는 CNCF의 Graduated 프로젝트로
+### 1-1. Cluster API
+Cluster API는 쿠버네티스에서 Cluster, Machine 등에 대한 리소스를 관리하는 Kubernetes-Sig의 오픈소스 입니다. 이를 통해 
+
+### 1-2. Argo Project
+Argo는 CNCF의 Graduated 프로젝트로서, 대표적으로 ArgoCD가 있습니다. 초반 구상에는 ArgoCD
 
 
 ## 2. IaC 선별
