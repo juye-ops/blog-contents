@@ -54,7 +54,7 @@ Cluster 혹은 Machine 리소스를 Helm Chart로 배포하면 그를 바탕으�
 ArgoCD에서 배포된 Cluster, Machine등의 리소스를 감지하여 Machine 생성을 준비합니다.
 
 #### Argo Workflow
-Argo Events를 통해 리소스가 감지되면 이를 바탕으로 Machine에 대한  초기 Initializing 
+Argo Events를 통해 리소스가 감지되면 이를 바탕으로 Machine을 초기화합니다. `OpenTofu`를 통해 VM을 프로비저닝하고 `Ansible`을 통해 Clustering을 진행합니다.
 
 
 ## 2. IaC 선별
