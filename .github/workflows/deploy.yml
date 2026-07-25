@@ -60,4 +60,4 @@ jobs:
         with:
           token: ${{ secrets.BLOG_REPO_TOKEN }} # 2단계에서 등록한 토큰
           repository: juye-ops/juye-ops.github.io # 대상 B 레포지토리 이름 (소유자/레포명)
-          event_type: run-post-action # 1단계에서 설정한 type 이름
+          event-type: run-post-action # 1단계에서 설정한 type 이름
