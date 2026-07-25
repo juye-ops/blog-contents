@@ -56,19 +56,23 @@ Argo Events를 통해 리소스가 감지되면 이를 바탕으로 Machine을 �
 
 
 ## 2. IaC 선별
+> [!quote] 
+> IaC는 현재 환경에 대해서 구성한 예시이며, 프로젝트에서 사용자의 핸들링이 필요한 영역입니다. 현재 선택한 OpenTofu와 Ansible이 아니더라도 VM을 Provisioning할 수 있는 환경이라면 [[#1. Kubernetes 컴포넌트 선별]] 기술 셋을 통해 클러스터 프로비저닝에 대한 궁극적인 목적은 달성할 수 있습니다.
+
 ### 2-1. VM Provisioner
 구상 초반에는 널리 사용되는 Terraform을 고안했으나, Hashicorp 라이선스 정책의 한계로 인해OpenTofu를 결정했습니다. OpenTofu 프로젝트는 Terraform의 포크 프로젝트로, 리눅스 재단에서 관리하여 라이선스 변경 대응에 용이합니다.
 
 ### 2-2. Kubernetes Automation
-Kubernetes 클러스터 자동화는 
+Kubernetes 클러스터 자동화는 Ansible을 활용합니다. Ansible 또한 레드햇이 소유하고 있지만 핵심 엔진과 생태계가 강력한 GPLv3 오픈소스 라이선스로 보호받고 있어 테라폼처럼 일방적인 유료화 전환이 구조적으로 매우 어렵다고 판단했습니다. 설령 라이선스 변경 시도가 있더라도 OpenTofu처럼 커뮤니티가 즉각 사이드 포크를 통해 소스코드를 이어받을 수 있다고 판단했습니다.
 
 
 ## 3. HyperVisor 비교 및 선별
-쿠버네티스의 VM을 프로비저닝 하기 위한 Hypervisor는 IaC로의 프로비저닝 지원 여부에 종속되어 있어 중요도는 낮습니다. 따라서 개발 테스트 용으로 이용하기 위해 적은 리소스를 소요하는 Hypervisor를 선별하였습니다. [[01HR5YHX00DCQAC267MDEW7Y5X|하이브리드 클라우드 구축]]에서 클라우드 및 Hypervisor 환경을 비교했으며, 이번 프로젝트에서 해당 결과에 더해 Harvester에 대한 비교를 진행했습니다. 결과적으로 기존에 사용하던 Proxmox를 선정하였습니다.
+> [!quote]
+> 쿠버네티스의 VM을 프로비저닝 하기 위한 Hypervisor는 IaC로의 프로비저닝 지원 여부에 종속되어 있어 중요도는 낮습니다. 따라서 개발 테스트 용으로 이용하기 위해 적은 리소스를 소요하는 Hypervisor를 선별하였습니다. [[01HR5YHX00DCQAC267MDEW7Y5X|하이브리드 클라우드 구축]]에서 클라우드 및 Hypervisor 환경을 비교했으며, 이번 프로젝트에서 해당 결과에 더해 Harvester에 대한 비교를 진행했습니다. 결과적으로 기존에 사용하던 Proxmox를 선정하였습니다.
 
-비교대상
-- Proxmox
-- Harvester
+> 비교대상
+> - Proxmox
+> - Harvester
 
 ### 3-1. 비교 대상 선별 사유
 개인 개발 환경으로 이미 Proxmox를 사용하고 있으며, 현재 회사에서는 VCF9의 Supervisor를 통해 VKS로 쿠버네티스의 멀티 클러스터 환경을 고객사에게 제공하고 있습니다. 해당 아키텍처가 Harvester의 구조와 유사하게 HCI 구조이기 때문에 쿠버네티스 형태로 OS를 관리할 수 있다는 점이 용이하다고 판단하였습니다.
