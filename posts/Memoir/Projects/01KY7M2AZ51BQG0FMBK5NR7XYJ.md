@@ -21,7 +21,13 @@ featured: true
 > 기존엔 널리 사용되는 Terraform을 고안했으나, 마찬가지로 Hashicorp 라이선스 정책의 한계로 오픈소스인 OpenTofu를 결정했습니다. OpenTofu 프로젝트는 Terraform의 포크 프로젝트로, 리눅스 재단에서 관리하여 라이선스 변경 대응에 용이합니다.
 
 ## **개발 환경 & 아키텍처**
-- 개발 환경 & 아키텍처
+- Kubernetes 컴포넌트
+	- Cluster API
+	- Argo CD
+	- Argo Events
+	- Argo Workflows
+	- Karmada
+- 
 
 ---
 
