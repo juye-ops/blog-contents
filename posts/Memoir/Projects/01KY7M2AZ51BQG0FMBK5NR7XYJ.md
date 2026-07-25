@@ -65,8 +65,16 @@ featured: true
 	- 커뮤니티 활성화 및 다양한 외부 레퍼런스
 	- 현재 개인 개발 환경로 운용 중
 - 단점
-	- 
+	- 외부 소프트웨어와의 낮은 호환성
+	- 인프라 레벨 A to Z 구축 필요
 
+#### Harvester
+- 장점
+	- Infra 레벨 Built-in
+	- Kubernetes 명령어로 Hypervisor 제어
+	- HCI를 위한 다양한 오픈소스를 Add-on 형태로 지원
+- 단점
+	- 유휴 메로리 9GB 내외(Mon)
 
 
 ---
