@@ -77,7 +77,7 @@ Argo는 CNCF의 Graduated 프로젝트로서, 대표적으로 ArgoCD가 있습�
 	- Kubernetes 명령어로 Hypervisor 제어
 	- HCI를 위한 다양한 오픈소스를 Add-on 형태로 지원
 - 단점
-	- 유휴 메로리 9GB 내외(Monitoring Add-on 배포 시 12GB 내외)
+	- 유휴 메모리 9GB 내외(Monitoring Add-on 배포 시 12GB 내외)
 	- Rancher 별도 관리 필요
 
 ---
