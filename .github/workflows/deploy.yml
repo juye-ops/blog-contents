@@ -59,6 +59,5 @@ jobs:
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.BLOG_REPO_TOKEN }} # 2단계에서 등록한 토큰
-          repository: your-username/b-repo-name # 대상 B 레포지토리 이름 (소유자/레포명)
-          event_type: run-my-action # 1단계에서 설정한 type 이름
-          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}' # 필요시 데이터 전달 가능
+          repository: juye-ops/juye-ops.github.io # 대상 B 레포지토리 이름 (소유자/레포명)
+          event_type: run-post-action # 1단계에서 설정한 type 이름
