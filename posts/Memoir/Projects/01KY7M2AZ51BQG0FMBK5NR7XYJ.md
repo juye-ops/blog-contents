@@ -56,7 +56,11 @@ Argo Events를 통해 리소스가 감지되면 이를 바탕으로 Machine을 �
 
 
 ## 2. IaC 선별
+### 2-1. VM Provisioner
 구상 초반에는 널리 사용되는 Terraform을 고안했으나, Hashicorp 라이선스 정책의 한계로 인해OpenTofu를 결정했습니다. OpenTofu 프로젝트는 Terraform의 포크 프로젝트로, 리눅스 재단에서 관리하여 라이선스 변경 대응에 용이합니다.
+
+### 2-2. Kubernetes Automation
+Kubernetes 클러스터 자동화는 
 
 
 ## 3. HyperVisor 비교 및 선별
