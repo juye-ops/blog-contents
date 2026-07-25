@@ -22,12 +22,18 @@ featured: true
 
 ## **개발 환경 & 아키텍처**
 - Kubernetes 컴포넌트
-	- Cluster API
-	- Argo CD
-	- Argo Events
-	- Argo Workflows
-	- Karmada
-- 
+	- `Cluster API`
+	- `Argo CD`
+	- `Argo Events`
+	- `Argo Workflows`
+	- `Karmada`
+- IaC
+	- `OpenTofu`
+	- `Ansible`
+	- ~~`Terraform`~~
+- 테스트 용 HyperVisor
+	- `Proxmox`
+	- ~~`Harvester`~~
 
 ---
 
