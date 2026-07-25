@@ -2,7 +2,7 @@ name: Cross-Branch Blog Builder
 
 on:
   push:
-    branches: [ main ] # 1. main 브랜치에 글이 push 되면 트리거
+    branches: [main] # 1. main 브랜치에 글이 push 되면 트리거
 
 jobs:
   build-and-deploy:
@@ -54,3 +54,11 @@ jobs:
           force_orphan: true
           keep_files: false
           disable_nojekyll: true
+
+      - name: Send repository_dispatch event to B repo
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.BLOG_REPO_TOKEN }} # 2단계에서 등록한 토큰
+          repository: your-username/b-repo-name # 대상 B 레포지토리 이름 (소유자/레포명)
+          event_type: run-my-action # 1단계에서 설정한 type 이름
+          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}' # 필요시 데이터 전달 가능
