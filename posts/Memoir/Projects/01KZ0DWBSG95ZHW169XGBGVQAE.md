@@ -37,7 +37,57 @@ kubebuilder init \
     --repo="github.com/kluster-sigs/kluster"
 ```
 
+> [!info]- 최초 폴더 구조
+> ```
+> .
+> ├── AGENTS.md
+> ├── Dockerfile
+> ├── Makefile
+> ├── PROJECT
+> ├── README.md
+> ├── cmd
+> │   └── main.go
+> ├── config
+> │   ├── default
+> │   │   ├── cert_metrics_manager_patch.yaml
+> │   │   ├── kustomization.yaml
+> │   │   ├── manager_metrics_patch.yaml
+> │   │   └── metrics_service.yaml
+> │   ├── manager
+> │   │   ├── kustomization.yaml
+> │   │   └── manager.yaml
+> │   ├── network-policy
+> │   │   ├── allow-metrics-traffic.yaml
+> │   │   └── kustomization.yaml
+> │   ├── prometheus
+> │   │   ├── kustomization.yaml
+> │   │   ├── monitor.yaml
+> │   │   └── monitor_tls_patch.yaml
+> │   └── rbac
+> │       ├── kustomization.yaml
+> │       ├── leader_election_role.yaml
+> │       ├── leader_election_role_binding.yaml
+> │       ├── metrics_auth_role.yaml
+> │       ├── metrics_auth_role_binding.yaml
+> │       ├── metrics_reader_role.yaml
+> │       ├── role.yaml
+> │       ├── role_binding.yaml
+> │       └── service_account.yaml
+> ├── go.mod
+> ├── go.sum
+> ├── hack
+> │   └── boilerplate.go.txt
+> └── test
+>     ├── e2e
+>     │   ├── e2e_suite_test.go
+>     │   └── e2e_test.go
+>     └── utils
+>         └── utils.go
+> ```
+
 ## 2. API 선언
+Kluster의 CRD가 사용할 Types를 지정한다. Kubebuilder는 이를 바탕으로 CRD를 생성한다.
+
 
 
 ---
