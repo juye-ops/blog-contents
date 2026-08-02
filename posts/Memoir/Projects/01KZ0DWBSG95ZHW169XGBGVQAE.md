@@ -33,7 +33,7 @@ Kubebuilder는 `init` 명령어를 통해 Operator에 대한 go template을 생�
 
 ```bash
 kubebuilder init \
-    --domain="kluster.io" \
+    --domain="infrastructure.kluster.io" \
     --repo="github.com/kluster-sigs/kluster"
 ```
 
@@ -86,8 +86,72 @@ kubebuilder init \
 > ```
 
 ## 2. API 선언
+### 2-1. API 생성
 Kluster의 CRD가 사용할 Types를 지정한다. Kubebuilder는 이를 바탕으로 CRD를 생성한다.
+```
+kubebuilder create api --group infrastructure.kluster.io --version v1 --kind Cluster
+kubebuilder create api --group infrastructure.kluster.io --version v1 --kind ControlPlane
+kubebuilder create api --group infrastructure.kluster.io --version v1 --kind WorkerNode
+kubebuilder create api --group infrastructure.kluster.io --version v1 --kind InfrastructureTemplate
+```
 
+### 2-2. Type 정의
+`./api/v1/{apiName}_types.go` 에서 Type을 지정한다.
+
+```go:cluster_types.go
+...
+type ClusterSpec struct {
+	ClusterName        string             `json:"clusterName"`
+	KubernetesVersion  string             `json:"kubernetesVersion"`
+	ControlPlaneConfig ControlPlaneConfig `json:"controlPlaneRef"`
+	WorkerNodeConfigs  []WorkerNodeConfig `json:"workerNodeRefs,omitempty"`
+}
+...
+```
+
+```go:controlplane_types.go
+...
+type ControlPlaneConfig struct {
+	Replicas    int    `json:"replicas"`
+	TemplateRef string `json:"templateRef"`
+}
+
+type ControlPlaneSpec struct {
+	ControlPlaneConfig `json:",inline"`
+	KubernetesVersion  string `json:"kubernetesVersion"`
+}
+...
+```
+
+```go:workernode_types.go
+...
+type WorkerNodeConfig struct {
+	NodePool    string `json:"nodePool"`
+	Replicas    int    `json:"replicas"`
+	TemplateRef string `json:"templateRef"`
+}
+
+type WorkerNodeSpec struct {
+	WorkerNodeConfig  `json:",inline"`
+	KubernetesVersion string `json:"kubernetesVersion"`
+}
+...
+```
+
+```go:infrastructuretemplate_types.go
+...
+type InfrastructureTemplateSpec struct {
+	CPU    string `json:"cpu"`
+	Memory string `json:"memory"`
+}
+...
+```
+
+### 2-3. Custom resource 생성
+make 명령어를 통해 API에 대한 제어를 지원한다.
+`make manifests`: CRD 등 manifests를 생성한다.
+`make install`: 
+`make generate`
 
 
 ---
