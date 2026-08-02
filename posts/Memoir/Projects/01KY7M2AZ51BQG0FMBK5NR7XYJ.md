@@ -4,7 +4,7 @@ domain: Memoir
 category: Projects
 date: 2026-07-23
 thumbnail: ""
-description: "Kluster은 플랫폼 종속성 없이 추상화 된 쿠버네티스 Cluster의 프로비저닝을 지원합니다."
+description: ""
 featured: true
 ---
 
