@@ -15,6 +15,8 @@ featured: true
 # 📘 **프로젝트 소개**
 ## **개요**
 Kluster는 `Kubebuilder` 기반 쿠버네티스 Cluster 배포를 관리하기 위한 Operator입니다.
+> Kubebuilder는 Operator 
+
 특히 Cluster 리소스를 추상화하여 배포 Provisioner Provider에 대한 종속성을 완전 해제하는 것을 목표로 개발합니다.
 
 배포 절차는 다음과 같습니다.
@@ -26,7 +28,8 @@ Kluster는 `Kubebuilder` 기반 쿠버네티스 Cluster 배포를 관리하기 �
 
 # 📜 **개발 방법**
 > [!quote] 참조 용 콜아웃(필요 없을 시 제거)
-## 1. 제목
+## 1. Initialize
+Kubebuilder는 template을 생성합니다. 
 
 ### 1-1. 제목
 
