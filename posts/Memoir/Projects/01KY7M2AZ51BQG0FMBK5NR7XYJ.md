@@ -1,10 +1,10 @@
 ---
-title: "Argo Provisioner: Argo 기반 클러스터 생성"
+title: "Kluster: Argo 기반 클러스터 생성"
 domain: Memoir
 category: Projects
 date: 2026-07-23
 thumbnail: ""
-description: "Argo "
+description: "Kluster은 플랫폼 종속성 없이 추상화 된 쿠버네티스 Cluster의 프로비저닝을 지원합니다."
 featured: true
 ---
 
@@ -16,15 +16,14 @@ featured: true
 # 📘 **프로젝트 소개**
 ## **개요**
 본 프로젝트에서는 다양한 오픈소스 솔루션을 결합하여 환경에 제약 없이 클러스터 생성을 자동화할 수 있는 방안을 제시합니다.
-쿠버네티스를 운영하기 위한 솔루션은 여럿 있으며, 그중 오픈소스로 클러스터 관리 툴로 유명한 Rancher는 CNCF의 `Certified Kubernetes - Distribution` 소프트웨어로 등록되어 있습니다. 특히 여럿 클라우드 환경에서의 프로비저닝과 여럿 오픈소스 솔루션을 지원하는 점이 강력한 장점으로 꼽히고 있습니다. 하지만 결국 Rancher의 Node Driver 지원 여부, SUSE 생태계에 강력히 종속되어 있어 라이선스에 대한 잠재적인 우려, Rancher의 유휴 리소스가 높은 등, 커뮤니티 레벨에서 사용하기엔 많은 제약점이 잇따릅니다.. 따라서 CNCF의 Argo와 OpenTofu, Kubernetes Sigs의 Cluster API를 기반으로 한 오픈소스 기반 쿠버네티스 클러스터 프로비저너를 구현합니다.
+쿠버네티스를 운영하기 위한 솔루션은 여럿 있으며, 그중 오픈소스로 클러스터 관리 툴로 유명한 Rancher는 CNCF의 `Certified Kubernetes - Distribution` 소프트웨어로 등록되어 있습니다. 특히 여럿 클라우드 환경에서의 프로비저닝과 여럿 오픈소스 솔루션을 지원하는 점이 강력한 장점으로 꼽히고 있습니다. 하지만 결국 Rancher의 Node Driver 지원 여부, SUSE 생태계에 강력히 종속되어 있어 라이선스에 대한 잠재적인 우려, Rancher의 유휴 리소스가 높은 등, 커뮤니티 레벨에서 사용하기엔 많은 제약점이 잇따릅니다.. 따라서 자체 개발 Operator와 CNCF의 Argo와 OpenTofu 기반으로 한 오픈소스 기반 쿠버네티스 클러스터 프로비저너를 구현합니다.
 
 ## **개발 환경 & 아키텍처**
 - Kubernetes 컴포넌트
-	- `Cluster API`
 	- `Argo CD`
 	- `Argo Events`
 	- `Argo Workflows`
-	- `Karmada`
+	- ~~`Cluster API`~~
 - IaC
 	- `OpenTofu`
 	- `Ansible`
@@ -39,8 +38,10 @@ featured: true
 > [!quote] 참조 용 콜아웃(필요 없을 시 제거)
 
 ## 1. Kubernetes 컴포넌트 선별
-### 1-1. Cluster API
-Cluster API는 쿠버네티스에서 Cluster, Machine 등에 대한 리소스를 관리하는 Kubernetes-Sig의 오픈소스 입니다. 이를 통해 쿠버네티스 클러스터를 프로비저닝 하고 제어할 수 있도록 구현하고자 합니다.
+### 
+
+> 초안은 ClusterAPI를 통해 리소스 관리를 하고자 하였습니다. 하지만 CRD 외에 불필요한 리소스를 요구하거나 
+> Cluster API는 쿠버네티스에서 Cluster, Machine 등에 대한 리소스를 관리하는 Kubernetes-Sig의 오픈소스 입니다. 이를 통해 쿠버네티스 클러스터를 프로비저닝 하고 제어할 수 있도록 구현하고자 하였습니다.
 
 ### 1-2. Argo Project
 Argo는 CNCF의 Graduated 프로젝트로서, 대표적으로 ArgoCD가 있습니다.
