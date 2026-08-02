@@ -87,7 +87,7 @@ kubebuilder init \
 
 ## 2. API 선언
 ### 2-1. API 생성
-Kluster의 CRD가 사용할 Types를 지정한다. Kubebuilder는 이를 바탕으로 CRD를 생성한다.
+Kluster의 CRD가 사용할 Types를 지정한다. Kubebuilder는 이를 바탕으로 CRD를 생성합니다.
 ```
 kubebuilder create api --group infrastructure.kluster.io --version v1 --kind Cluster
 kubebuilder create api --group infrastructure.kluster.io --version v1 --kind ControlPlane
@@ -96,7 +96,7 @@ kubebuilder create api --group infrastructure.kluster.io --version v1 --kind Inf
 ```
 
 ### 2-2. Type 정의
-`./api/v1/{apiName}_types.go` 에서 Type을 지정한다.
+`./api/v1/{apiName}_types.go` 에서 Type을 지정합니다.
 
 ```go:cluster_types.go
 ...
@@ -148,10 +148,10 @@ type InfrastructureTemplateSpec struct {
 ```
 
 ### 2-3. Custom resource 생성
-make 명령어를 통해 API에 대한 제어를 지원한다.
-`make manifests`: CRD 등 manifests를 생성한다.
-`make install`: 
-`make generate`
+make 명령어를 통해 API에 대한 제어를 지원합니다.
+`make manifests`: CRD 등 manifests를 생성합니다.
+`make install`: CRD를 클러스터에 배포합니다.
+`make generate`: deepcopy 객체를 생성해 
 
 
 ---
