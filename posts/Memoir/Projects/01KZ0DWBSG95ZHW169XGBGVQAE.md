@@ -29,14 +29,16 @@ Kluster는 `Kubebuilder` 기반 쿠버네티스 Cluster 배포를 관리하기 �
 # 📜 **개발 방법**
 > [!quote] 참조 용 콜아웃(필요 없을 시 제거)
 ## 1. Initialize
-Kubebuilder는 template을 생성합니다. 
+Kubebuilder는 `init` 명령어를 통해 Operator에 대한 go template을 생성합니다. 
 
-### 1-1. 제목
+```bash
+kubebuilder init \
+    --domain="kluster.io" \
+    --repo="github.com/kluster-sigs/kluster"
+```
 
----
+## 2. API 선언
 
-# 👪 **역할 및 개발 내용** %% 소속=개인일 경우 제거 %%
-- 내용
 
 ---
 
