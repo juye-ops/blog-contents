@@ -98,54 +98,56 @@ kubebuilder create api --group infrastructure.kluster.io --version v1 --kind Inf
 ### 2-2. Type 정의
 `./api/v1/{apiName}_types.go` 에서 Type을 지정합니다.
 
-```go:cluster_types.go
-...
-type ClusterSpec struct {
-	ClusterName        string             `json:"clusterName"`
-	KubernetesVersion  string             `json:"kubernetesVersion"`
-	ControlPlaneConfig ControlPlaneConfig `json:"controlPlaneRef"`
-	WorkerNodeConfigs  []WorkerNodeConfig `json:"workerNodeRefs,omitempty"`
-}
-...
-```
-
-```go:controlplane_types.go
-...
-type ControlPlaneConfig struct {
-	Replicas    int    `json:"replicas"`
-	TemplateRef string `json:"templateRef"`
-}
-
-type ControlPlaneSpec struct {
-	ControlPlaneConfig `json:",inline"`
-	KubernetesVersion  string `json:"kubernetesVersion"`
-}
-...
-```
-
-```go:workernode_types.go
-...
-type WorkerNodeConfig struct {
-	NodePool    string `json:"nodePool"`
-	Replicas    int    `json:"replicas"`
-	TemplateRef string `json:"templateRef"`
-}
-
-type WorkerNodeSpec struct {
-	WorkerNodeConfig  `json:",inline"`
-	KubernetesVersion string `json:"kubernetesVersion"`
-}
-...
-```
-
-```go:infrastructuretemplate_types.go
-...
-type InfrastructureTemplateSpec struct {
-	CPU    string `json:"cpu"`
-	Memory string `json:"memory"`
-}
-...
-```
+> [!info]- 코드
+> 
+> ```go:cluster_types.go
+> ...
+> type ClusterSpec struct {
+> 	ClusterName        string             `json:"clusterName"`
+> 	KubernetesVersion  string             `json:"kubernetesVersion"`
+> 	ControlPlaneConfig ControlPlaneConfig `json:"controlPlaneRef"`
+> 	WorkerNodeConfigs  []WorkerNodeConfig `json:"workerNodeRefs,omitempty"`
+> }
+> ...
+> ```
+> 
+> ```go:controlplane_types.go
+> ...
+> type ControlPlaneConfig struct {
+> 	Replicas    int    `json:"replicas"`
+> 	TemplateRef string `json:"templateRef"`
+> }
+> 
+> type ControlPlaneSpec struct {
+> 	ControlPlaneConfig `json:",inline"`
+> 	KubernetesVersion  string `json:"kubernetesVersion"`
+> }
+> ...
+> ```
+> 
+> ```go:workernode_types.go
+> ...
+> type WorkerNodeConfig struct {
+> 	NodePool    string `json:"nodePool"`
+> 	Replicas    int    `json:"replicas"`
+> 	TemplateRef string `json:"templateRef"`
+> }
+> 
+> type WorkerNodeSpec struct {
+> 	WorkerNodeConfig  `json:",inline"`
+> 	KubernetesVersion string `json:"kubernetesVersion"`
+> }
+> ...
+> ```
+> 
+> ```go:infrastructuretemplate_types.go
+> ...
+> type InfrastructureTemplateSpec struct {
+> 	CPU    string `json:"cpu"`
+> 	Memory string `json:"memory"`
+> }
+> ...
+> ```
 
 ### 2-3. Custom resource 생성
 make 명령어를 통해 API에 대한 제어를 지원합니다.
@@ -155,18 +157,47 @@ make 명령어를 통해 API에 대한 제어를 지원합니다.
 
 ### 3. Controller 개발
 실제 CRD 등 오퍼레이터가 실제 동작할 기능을 구현합니다.
-
-```go:bootstrap.go
-...
-func RunBootstrap(ctx context.Context, mgr ctrl.Manager, log logr.Logger) error {
-	# ClusterSecret 생성
-	if err := SaveManagementClusterSecret(ctx, mgr.GetClient()); err != nil {
-		return err
-	}
-
-
-
-```
+> [!info]- 코드
+> ```go:bootstrap.go
+> ...
+> func RunBootstrap(ctx context.Context, mgr ctrl.Manager, log logr.Logger) error {
+> 	# ClusterSecret 생성
+> 	if err := SaveManagementClusterSecret(ctx, mgr.GetClient()); err != nil {
+> 		return err
+> 	}
+> 
+> 	go func() {
+> 		if err := CleanupOperatorResources(cleanupCtx, mgr.GetClient()); err != nil {
+> 			log.Error(err, "cleanup failed")
+> 		}
+> 	}()
+> 	...
+> }
+> 
+> ```
+> 
+> ```go:clusterController.go
+> func (r *ClusterReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Result, error) {
+> 	cluster := &infrastructurev1.Cluster{}
+> 	if err := r.Get(ctx, req.NamespacedName, cluster); err != nil {
+> 		return ctrl.Result{}, client.IgnoreNotFound(err)
+> 	}
+> 
+> 	if !cluster.DeletionTimestamp.IsZero() {
+> 		return ctrl.Result{}, nil
+> 	}
+> 
+> 	if err := controlplane.EnsureControlPlaneExists(ctx, r.Client, r.Scheme, cluster); err != nil {
+> 		return ctrl.Result{}, err
+> 	}
+> 
+> 	if err := workernode.EnsureWorkerNodesExist(ctx, r.Client, r.Scheme, cluster); err != nil {
+> 		return ctrl.Result{}, err
+> 	}
+> 
+> 	return ctrl.Result{}, nil
+> }
+> ```
 
 
 ---

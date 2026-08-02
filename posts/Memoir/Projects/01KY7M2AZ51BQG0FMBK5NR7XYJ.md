@@ -38,7 +38,7 @@ featured: true
 
 ## 1. Kubernetes 컴포넌트 선별
 ### 1-1. Kluster
-Kluster는 자체 개발 클러스터 리소스 관리용 Operator입니다. Cluster 프로비저닝을 위한 CRD를 관리합니다.
+[[01KZ0DWBSG95ZHW169XGBGVQAE|Kluster]]는 자체 개발 클러스터 리소스 관리용 Operator입니다. Cluster 프로비저닝을 위한 CRD를 관리합니다.
 
 > 초안은 ClusterAPI를 통해 리소스 관리를 하고자 하였습니다. 하지만 Terraform 혹은 Proxmox의 Provider는 공식 지원이 아니며, CRD 만 사용하기엔 외의 유휴 리소스를 낭비하는 문제가 있었습니다. 따라서 Kluster Operator를 직접 개발합니다.
 > Cluster API는 쿠버네티스에서 Cluster, Machine 등에 대한 리소스를 관리하는 Kubernetes-Sig의 오픈소스 입니다. 이를 통해 쿠버네티스 클러스터를 프로비저닝 하고 제어할 수 있도록 구현하고자 하였습니다.
