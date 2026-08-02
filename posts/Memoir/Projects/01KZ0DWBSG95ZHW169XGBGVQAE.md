@@ -151,7 +151,22 @@ type InfrastructureTemplateSpec struct {
 make 명령어를 통해 API에 대한 제어를 지원합니다.
 `make manifests`: CRD 등 manifests를 생성합니다.
 `make install`: CRD를 클러스터에 배포합니다.
-`make generate`: deepcopy 객체를 생성해 
+`make generate`: deepcopy 객체를 생성합니다.
+
+### 3. Controller 개발
+실제 CRD 등 오퍼레이터가 실제 동작할 기능을 구현합니다.
+
+```go:bootstrap.go
+...
+func RunBootstrap(ctx context.Context, mgr ctrl.Manager, log logr.Logger) error {
+	# ClusterSecret 생성
+	if err := SaveManagementClusterSecret(ctx, mgr.GetClient()); err != nil {
+		return err
+	}
+
+
+
+```
 
 
 ---
