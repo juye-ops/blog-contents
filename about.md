@@ -68,19 +68,28 @@ tagline: |-
 
 ## 데이타솔루션 | AI테크서비스팀 | 2024.04. ~ 
 
-> ### 외부 운영 지원 및 컨설팅
->  [삼성전자 MX] VMware TKGm 운영 지원
-> - ㅅ
-> - vSphere 및 Kubernetes 클러스터 운영 지원
+> ### 외부 구축/운영 지원 및 컨설팅
+> [한화생명]
+> - 
+> 
+> [SK머터리얼즈]
+> - 
+> 
+> [광해공업공단] VKS & PrivateAI 설계/PoC/구축
+> -
+> 
+>  [삼성전자 MX] VMware TKGm 운영 지원 <sub>2024.06. ~ </sub>
+> - vSphere 환경 및 Tanzu Kubernetes 플랫폼 운영 지원
 > - Tanzu-Support OSS 기반 운영 지원
+> - VKS(vSphere Kubernetes Service) 플랫폼 마이그레이션 및 구축 프로세스 수립
 > - Velero 기반의 Cold DR(재해복구) 환경 구축
 > - 테스트베드 구축 및 Bash 스크립트를 활용한 프로세스 자동화
-> - (수습)VMware TKGm 및 TMC-SM 업그레이드 Hands-on
+> - VMware TKGm 및 TMC-SM 업그레이드 Hands-on
 >  
->  [KB 라이프생명] VMware TAS 테스트 지원
+>  [KB 라이프생명] VMware TAS 테스트 지원 <sub>2024.07. </sub>
 > - Air-gapped 환경 내 Image Registry 구성 및 애플리케이션 테스트 환경 제공
 >  
-> [해양수산부] RabbitMQ HA 가이드라인 작성
+> [해양수산부] RabbitMQ HA 가이드라인 작성 <sub>2024.12. ~ </sub>
 > - 라이선스 대응을 위한 RabbitMQ 고가용성 구성 표준화 및 문서화
 ---
 > ### 사내 OSS Kubernetes Ecosystem 구축
@@ -94,9 +103,6 @@ tagline: |-
 >   ### 사내 VKS (vSphere Kubernetes Service) 시스템 구축
 > - 인프라 관리: Supervisor 배포 및 VyOS 기반의 L2/L3 VLAN 제어 체계 수립
 > - 커스터마이징: ClusterAPI를 활용하여 유연한 클러스터 환경 최적화 
->  
-
-
 
 <div className="page"/>
 
