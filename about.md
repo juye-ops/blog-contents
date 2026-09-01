@@ -69,30 +69,30 @@ tagline: |-
 ## 데이타솔루션 | AI테크서비스팀 | 2024.04. ~ 
 
 > ### 외부 구축/운영 지원 및 컨설팅
-> [한화생명] VKS 구축 지원
+> [한화생명] VKS 구축 <sub>2026.08. ~ </sub>
+> - VKS(QA) 구축
+> - 국내 최초 Avi Loadbalancer의 GSLB 구축
+> 
+> [SK머티리얼즈] VKS 구축 <sub>2026.07. ~ </sub>
+> - VKS 구축
+> - VCF-Support & Third-party OSS 구축 지원
 > - VCF Automation - Keycloak 간 최소 권한 분리
-> - 국내 최초 Avi Loadbalancer의 GSLB 구축 사례
-> - Supervisor Service인 ArgoCD 지원
-> - 
 > 
-> [SK머티리얼즈] 
-> - 
-> 
-> [광해공업공단] VKS & PrivateAI 설계/PoC/구축
+> [한국광해광업공단] VKS & PrivateAI 설계/PoC/구축
 > - 글로벌 최초 VCF Private AI Service PoC
 > 
 >  [삼성전자 MX] VMware TKGm 운영 지원 <sub>2024.06. ~ </sub>
 > - vSphere 환경 및 Tanzu Kubernetes 플랫폼 운영 지원
 > - Tanzu-Support OSS 기반 운영 지원
+> - VMware TKGm 및 TMC-SM 업그레이드
 > - VKS 플랫폼 마이그레이션 및 구축 프로세스 수립
 > - Velero 기반의 Cold DR(재해복구) 환경 구축
 > - 테스트베드 구축 및 Bash 스크립트를 활용한 프로세스 자동화
-> - VMware TKGm 및 TMC-SM 업그레이드 Hands-on
 >  
 >  [KB 라이프생명] VMware TAS 테스트 지원 <sub>2024.07. </sub>
 > - Air-gapped 환경 내 Image Registry 구성 및 애플리케이션 테스트 환경 제공
 >  
-> [해양수산부] RabbitMQ HA 가이드라인 작성 <sub>2024.12. ~ </sub>
+> [해양수산부] RabbitMQ HA 가이드라인 작성 <sub>2024.12.</sub>
 > - 라이선스 대응을 위한 RabbitMQ 고가용성 구성 표준화 및 문서화
 ---
 > ### 사내 OSS Kubernetes Ecosystem 구축
