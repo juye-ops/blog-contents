@@ -56,6 +56,7 @@ tagline: |-
 
 ---
 # 🎖️ 자격사항
+- CKA; Certified Kubernetes Administrator
 - OPIc(English) - IH
 - 정보처리기사
 - 네트워크관리사 2급
@@ -67,22 +68,11 @@ tagline: |-
 
 ## 데이타솔루션 | AI테크서비스팀 | 2024.04. ~ 
 
-> ### 사내 OSS Kubernetes Ecosystem 구축
-> - Rancher - 중앙 관리에 대한 멀티 클러스터 환경 구축
-> - ArgoCD, GitLab - 멀티클러스터에 대한 중앙 관리 CI/CD 환경 구축
-> - Cert Manager – 클러스터 내부 인증서 관리
-> - Istio, Kiali – 마이크로서비스 메시 및 모니터링 구현
-> - Grafana, Loki, Prometheus – 중앙관리 형 플랫폼/애플리케이션 모니터링 구축
-> - 본부 내 샘플 소스코드 아키텍처 분석 세미나 진행
-> - ---
->   ### 사내 VKS (vSphere Kubernetes Service) 시스템 구축
-> - 인프라 관리: Supervisor 배포 및 VyOS 기반의 L2/L3 VLAN 제어 체계 수립
-> - 커스터마이징: ClusterAPI를 활용하여 유연한 클러스터 환경 최적화 
->  
-> ---
->   ### 외부 운영 지원 및 컨설팅
+> ### 외부 운영 지원 및 컨설팅
 >  [삼성전자 MX] VMware TKGm 운영 지원
-> - vSphere 및 Kubernetes 클러스터 모니터링/장애 대응
+> - ㅅ
+> - vSphere 및 Kubernetes 클러스터 운영 지원
+> - Tanzu-Support OSS 기반 운영 지원
 > - Velero 기반의 Cold DR(재해복구) 환경 구축
 > - 테스트베드 구축 및 Bash 스크립트를 활용한 프로세스 자동화
 > - (수습)VMware TKGm 및 TMC-SM 업그레이드 Hands-on
@@ -92,6 +82,19 @@ tagline: |-
 >  
 > [해양수산부] RabbitMQ HA 가이드라인 작성
 > - 라이선스 대응을 위한 RabbitMQ 고가용성 구성 표준화 및 문서화
+---
+> ### 사내 OSS Kubernetes Ecosystem 구축
+> - Rancher - 중앙 관리에 대한 멀티 클러스터 환경 구축
+> - ArgoCD, GitLab - 멀티클러스터에 대한 중앙 관리 CI/CD 환경 구축
+> - Cert Manager – 클러스터 내부 인증서 관리
+> - Istio, Kiali – 마이크로서비스 메시 및 모니터링 구현
+> - Grafana, Loki, Prometheus – 중앙관리 형 플랫폼/애플리케이션 모니터링 구축
+> - 본부 내 샘플 소스코드 아키텍처 분석 세미나 진행
+---
+>   ### 사내 VKS (vSphere Kubernetes Service) 시스템 구축
+> - 인프라 관리: Supervisor 배포 및 VyOS 기반의 L2/L3 VLAN 제어 체계 수립
+> - 커스터마이징: ClusterAPI를 활용하여 유연한 클러스터 환경 최적화 
+>  
 
 
 
