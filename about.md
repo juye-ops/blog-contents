@@ -69,19 +69,19 @@ tagline: |-
 ## 데이타솔루션 | AI테크서비스팀 | 2024.04. ~ 
 
 > ### 외부 구축/운영 지원 및 컨설팅
-> [한화생명] VKS 구축 <sub>2026.08. ~ </sub>
+> **[한화생명] VKS 구축** <sub>2026.08. ~ </sub>
 > - VKS(QA) 구축
 > - 국내 최초 Avi Loadbalancer의 GSLB 구축
 > 
-> [SK머티리얼즈] VKS 구축 <sub>2026.07. ~ </sub>
+> **[SK머티리얼즈] VKS 구축** <sub>2026.07. ~ </sub>
 > - VKS 구축
 > - VCF-Support & Third-party OSS 구축 지원
 > - VCF Automation - Keycloak 간 최소 권한 분리
 > 
-> [한국광해광업공단] VKS & PrivateAI 설계/PoC/구축
+> **[한국광해광업공단] VKS & PrivateAI 설계/PoC/구축** <sub>2026.01. ~ 2026.05.</sub>
 > - 글로벌 최초 VCF Private AI Service PoC
 > 
->  [삼성전자 MX] VMware TKGm 운영 지원 <sub>2024.06. ~ </sub>
+> **[삼성전자 MX] VMware TKGm 운영 지원** <sub>2024.06. ~ </sub>
 > - vSphere 환경 및 Tanzu Kubernetes 플랫폼 운영 지원
 > - Tanzu-Support OSS 기반 운영 지원
 > - VMware TKGm 및 TMC-SM 업그레이드
@@ -89,23 +89,23 @@ tagline: |-
 > - Velero 기반의 Cold DR(재해복구) 환경 구축
 > - 테스트베드 구축 및 Bash 스크립트를 활용한 프로세스 자동화
 >  
->  [KB 라이프생명] VMware TAS 테스트 지원 <sub>2024.07. </sub>
+> **[KB 라이프생명] VMware TAS 테스트 지원** <sub>2024.07. </sub>
 > - Air-gapped 환경 내 Image Registry 구성 및 애플리케이션 테스트 환경 제공
 >  
-> [해양수산부] RabbitMQ HA 가이드라인 작성 <sub>2024.12.</sub>
+> **[해양수산부] RabbitMQ HA 가이드라인 작성** <sub>2024.12.</sub>
 > - 라이선스 대응을 위한 RabbitMQ 고가용성 구성 표준화 및 문서화
 ---
-> ### 사내 OSS Kubernetes Ecosystem 구축
-> - Rancher - 중앙 관리에 대한 멀티 클러스터 환경 구축
+> ### OSS 구축 및 운영 사례
+> - Rancher - OSS 중앙 관리에 대한 멀티 클러스터 환경 구축
 > - ArgoCD, GitLab - 멀티클러스터에 대한 중앙 관리 CI/CD 환경 구축
 > - Cert Manager – 클러스터 내부 인증서 관리
 > - Istio, Kiali – 마이크로서비스 메시 및 모니터링 구현
 > - Grafana, Loki, Prometheus – 중앙관리 형 플랫폼/애플리케이션 모니터링 구축
-> - 본부 내 샘플 소스코드 아키텍처 분석 세미나 진행
 ---
 >   ### 사내 VKS (vSphere Kubernetes Service) 시스템 구축
-> - 인프라 관리: Supervisor 배포 및 VyOS 기반의 L2/L3 VLAN 제어 체계 수립
-> - 커스터마이징: ClusterAPI를 활용하여 유연한 클러스터 환경 최적화 
+> - Supervisor 배포 및 VyOS 기반의 L2/L3 VLAN 제어 체계 수립
+> - ClusterAPI를 활용하여 유연한 클러스터 환경 최적화
+> - 제한된 라이선스 환경에서 OSS 기반 설치 진행
 
 <div className="page"/>
 
