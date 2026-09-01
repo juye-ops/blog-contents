@@ -83,26 +83,14 @@ tagline: |-
 > 
 > **[삼성전자 MX] VMware TKGm 운영 지원** <sub>2024.06. ~ </sub>
 > - vSphere 환경 및 Tanzu Kubernetes 플랫폼 운영 지원
-> - Tanzu-Support OSS 기반 운영 지원
-> - VMware TKGm 및 TMC-SM 업그레이드
+> 	- PM 작업 7회
+> 	- VMware TKGm 및 TMC-SM 업그레이드
+> 	- Velero 기반 Cold DR(재해복구) 환경 구축
+> 	- Tanzu-Support OSS 기반 운영 지원
 > - VKS 플랫폼 마이그레이션 및 구축 프로세스 수립
-> - Velero 기반의 Cold DR(재해복구) 환경 구축
-> - 테스트베드 구축 및 Bash 스크립트를 활용한 프로세스 자동화
->  
-> **[KB 라이프생명] VMware TAS 테스트 지원** <sub>2024.07. </sub>
-> - Air-gapped 환경 내 Image Registry 구성 및 애플리케이션 테스트 환경 제공
->  
-> **[해양수산부] RabbitMQ HA 가이드라인 작성** <sub>2024.12.</sub>
-> - 라이선스 대응을 위한 RabbitMQ 고가용성 구성 표준화 및 문서화
----
-> ### OSS 구축 및 운영 사례
-> - Rancher - OSS 중앙 관리에 대한 멀티 클러스터 환경 구축
-> - ArgoCD, GitLab - 멀티클러스터에 대한 중앙 관리 CI/CD 환경 구축
-> - Cert Manager – 클러스터 내부 인증서 관리
-> - Istio, Kiali – 마이크로서비스 메시 및 모니터링 구현
-> - Grafana, Loki, Prometheus – 중앙관리 형 플랫폼/애플리케이션 모니터링 구축
----
->   ### 사내 VKS (vSphere Kubernetes Service) 시스템 구축
+> - 테스트베드 구축 및 Bash 스크립트를 활용한 반복 프로세스 자동화
+> 
+> ### 사내 VKS (vSphere Kubernetes Service) 시스템 구축
 > - Supervisor 배포 및 VyOS 기반의 L2/L3 VLAN 제어 체계 수립
 > - ClusterAPI를 활용하여 유연한 클러스터 환경 최적화
 > - 제한된 라이선스 환경에서 OSS 기반 설치 진행
@@ -114,11 +102,15 @@ tagline: |-
 ## 온프레미스 구축 | 2025.02. ~
 > ### 개인 로컬에서 운용하는 K8S 기반 온프레미스 환경 구축
 > - Proxmox, OPNsense, TrueNAS를 통한 인프라 구축 및 쿠버네티스 클러스터 연동
-> - React(Vite, Next), Spring, Python 등 마이크로 서비스 배포 구성
 > - Keepalived 및 HAProxy를 통한 고가용성 진입점 구성
-> - Github ARC, Harbor, ArgoCD를 통한 CI/CD 파이프라인 구축
-> - App-of-Apps 아키텍처를 통한 Micro-Service 관리
 > - Democratic CSI를 통한 오픈소스 CSI 구축
+> - Grafana, Loki, Prometheus 기반 중앙관리 형 플랫폼/애플리케이션 모니터링 구축
+> - Cert Manager 기반 클러스터 내부 인증서 관리
+> - Istio, Kiali 기반 마이크로서비스 메시 및 모니터링 구현
+> - ArgoCD의 App-of-Apps 아키텍처를 통한 Micro-Service 관리
+> 	- React(Vite, Next), Spring, Python 등 샘플 마이크로 서비스 배포 구성
+> 	- Github ARC 기반 CI/CD 파이프라인 구성
+> - (Legacy)Rancher 기반 중앙 관리 멀티 클러스터 환경 구축
 
 ---
 ## On Premiser | 2023.04. ~ 2023.09.
