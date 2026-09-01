@@ -106,10 +106,10 @@ tagline: |-
 > - Democratic CSI를 통한 오픈소스 CSI 구축
 > - Grafana, Loki, Prometheus 기반 중앙관리 형 플랫폼/애플리케이션 모니터링 구축
 > - Cert Manager 기반 클러스터 내부 인증서 관리
-> - Istio, Kiali 기반 마이크로서비스 메시 및 모니터링 구현
-> - ArgoCD의 App-of-Apps 아키텍처를 통한 Micro-Service 관리
+> - OSS 생태계 내 Micro-Service 관리
 > 	- React(Vite, Next), Spring, Python 등 샘플 마이크로 서비스 배포 구성
-> 	- Github ARC 기반 CI/CD 파이프라인 구성
+> 	- ArgoCD 및 Github ARC 기반 App of apps CI/CD 파이프라인 구성
+> 	- Istio, Kiali 기반 마이크로서비스 메시 및 모니터링 구현
 > - (Legacy)Rancher 기반 중앙 관리 멀티 클러스터 환경 구축
 
 ---
