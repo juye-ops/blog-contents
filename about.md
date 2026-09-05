@@ -16,11 +16,11 @@ tagline: |-
 > - 일반 학점: 4.12
 > - 전공 학점: 4.24 
 
-[IXLAB] 학부 연구생
+**[IXLAB] 학부 연구생**
 - 연구실 구성원 별 컨테이너 기반 연구 환경 제공
 - 지자체 중소기업 혁신 사업 프로젝트에서 인프라 개발 및 엔지니어링 수행
 
-신입생 및 알고리즘 전공 멘토
+**신입생 및 알고리즘 전공 멘토**
 - 신입생의 대학 적응 도모를 위한 교내 활동 장려
 - Python 및 알고리즘 멘토로서 학업 능력 향상 지원
 
@@ -94,22 +94,23 @@ tagline: |-
 > ### 구축/운영 지원 및 컨설팅
 > > **[한화생명] VKS 구축** <sub>2026.08. ~ </sub>
 > > - VKS(QA) 구축
-> > - ==국내 최초== Avi Loadbalancer의 GSLB 구축
+> > - ==**국내 최초**== Avi Loadbalancer의 GSLB 구축
 > > - ArgoCD Operator(Supervisor Service) 구축 지원
 > > 
 > > **[SK머티리얼즈] VKS 구축** <sub>2026.07. ~ </sub>
 > > - VKS 구축
 > > - VCF-Support & Third-party OSS 구축 지원
 > > - Keycloak - Pinniped 기반 kubeconfig 권한 분리
-> > - OSS(GitLab, Loki, Jenkins) 구축 지원
 > > 
 > > **[한국광해광업공단] VKS & PrivateAI 설계/PoC/구축** <sub>2026.03. ~ 2026.05.</sub>
 > > - VKS 구축
-> > - ==글로벌 최초== VCF Private AI Service PoC
+> > - ==**글로벌 최초**== VCF Private AI Service PoC
 > > 
 > > **[삼성전자 MX] VMware TKGm 운영 지원** <sub>2024.06. ~ </sub>
 > > - vSphere 환경 및 Tanzu Kubernetes 플랫폼 운영 지원
-> > 	- PM 작업 7회
+> > 	- 약 50개의 쿠버네티스 클러스터에 대한 운영 지원
+> > 	- Grafana를 통한 중앙 관리 모니터링 구축
+> > 	- PM 작업 7회 ==**전 작업 무사고**==
 > > 	- VMware TKGm 및 TMC-SM 업그레이드
 > > 	- Velero 기반 Cold DR(재해복구) 환경 구축
 > > 	- Tanzu-Support OSS 기반 운영 지원
@@ -127,10 +128,8 @@ tagline: |-
 ### Kluster Provisioner<sub> 2026.08. ~ </sub>
 > **Hypervisor 종속성을 최소화하는 OSS 기반 VM 및 Cluster 프로비저닝 툴**
 > - KubeBuilder 기반 CRD 및 Operator 개발
-> - Argo Project 기반 VM 프로비저닝 워크플로우
-> - OpenTofu 기반 IaC VM 프로비저닝
-
----
+> - Argo Project 기반 VM 프로비저닝 워크플로우 구현
+> - OpenTofu 기반 IaC VM 프로비저닝 구현
 
 ### 온프레미스 구축 <sub> 2025.02. ~ </sub>
 > **개인 로컬에서 운용하는 K8S 기반 온프레미스 환경 구축**
@@ -143,8 +142,6 @@ tagline: |-
 > 	- ArgoCD 및 Github ARC 기반 App of apps CI/CD 파이프라인 구성
 > 	- Istio, Kiali 기반 마이크로서비스 메시 및 모니터링 환경 구성
 > - (Legacy)Rancher 기반 중앙 관리 멀티 클러스터 환경 구축
-
----
 
 ### On Premiser <sub> 2023.04. ~ 2023.09 </sub>
 > **웹 기반 Private 클라우드 플랫폼 개발**
@@ -161,8 +158,6 @@ tagline: |-
 > - 3개의 노드에 대해 베어메탈 인프라 구축
 > - Python의 Flask 프레임워크를 통한 REST API 개발
 > - Proxy 및 방화벽 제어
-
----
 
 ### 객체 탐지 데이터 및 학습 관리 시스템 <sub> 2021.01. ~ 2021.08. | IXLAB </sub>
 > **웹 기반 Object detection 분야 MLOps 및 데이터 시각화 툴**
