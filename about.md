@@ -71,15 +71,17 @@ tagline: |-
 > ### 외부 구축/운영 지원 및 컨설팅
 > **[한화생명] VKS 구축** <sub>2026.08. ~ </sub>
 > - VKS(QA) 구축
-> - 국내 최초 Avi Loadbalancer의 GSLB 구축
+> - ==국내 최초== Avi Loadbalancer의 GSLB 구축
+> - ArgoCD Operator(Supervisor Service) 구축 지원
 > 
 > **[SK머티리얼즈] VKS 구축** <sub>2026.07. ~ </sub>
 > - VKS 구축
 > - VCF-Support & Third-party OSS 구축 지원
-> - VCF Automation - Keycloak 간 최소 권한 분리
+> - Keycloak - Pinniped 기반 kubeconfig 권한 분리
+> - OSS(GitLab, Loki, Jenkins) 구축 지원
 > 
 > **[한국광해광업공단] VKS & PrivateAI 설계/PoC/구축** <sub>2026.01. ~ 2026.05.</sub>
-> - 글로벌 최초 VCF Private AI Service PoC
+> - ==글로벌 최초== VCF Private AI Service PoC
 > 
 > **[삼성전자 MX] VMware TKGm 운영 지원** <sub>2024.06. ~ </sub>
 > - vSphere 환경 및 Tanzu Kubernetes 플랫폼 운영 지원
