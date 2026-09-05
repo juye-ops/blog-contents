@@ -100,7 +100,7 @@ tagline: |-
 > > **[SK머티리얼즈] VKS 구축** <sub>2026.07. ~ </sub>
 > > - VKS 구축
 > > - VCF-Support & Third-party OSS 구축 지원
-> > - Keycloak - Pinniped 기반 kubeconfig 권한 분리
+> > - Keycloak, Pinniped, VCF Automation 간 운영 최소 권한 분리
 > > 
 > > **[한국광해광업공단] VKS & PrivateAI 설계/PoC/구축** <sub>2026.03. ~ 2026.05.</sub>
 > > - VKS 구축
