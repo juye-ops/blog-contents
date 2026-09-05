@@ -31,16 +31,16 @@ tagline: |-
 <img src="https://img.shields.io/badge/Argo_CD-EF7B4D?logo=Argo&logoColor=white"/>
 <img src="https://img.shields.io/badge/Argo_Workflows-EF7B4D?logo=Argo&logoColor=white"/>
 <img src="https://img.shields.io/badge/Argo_Events-EF7B4D?logo=Argo&logoColor=white"/>
-
+</br>
 <img src="https://img.shields.io/badge/Authentik-FD4B2D?logo=Authentik&logoColor=white"/>
 <img src="https://img.shields.io/badge/Keycloak-4D4D4D?logo=Keycloak&logoColor=white"/>
-
+</br>
 <img src="https://img.shields.io/badge/Cilium-F8C517?logo=Cilium&logoColor=white"/>
 <img src="https://img.shields.io/badge/Istio-466BB0?logo=Istio&logoColor=white"/>
-
+</br>
 <img src="https://img.shields.io/badge/Grafana-F46800?logo=Grafana&logoColor=white"/>
 <img src="https://img.shields.io/badge/Prometheus-E6522C?logo=Prometheus&logoColor=white"/>
-
+</br>
 <img src="https://img.shields.io/badge/GitLab-FC6D26?logo=GitLab&logoColor=white"/>
 <img src="https://img.shields.io/badge/Harbor-60B932?logo=Harbor&logoColor=white"/>
 <img src="https://img.shields.io/badge/Cert_Manager-326CE5"/>
