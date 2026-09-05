@@ -28,18 +28,25 @@ tagline: |-
 <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white"/>
 
 ### OSS
-<img src="https://img.shields.io/badge/ArgoCD-EF7B4D?logo=Argo&logoColor=white"/>
+<img src="https://img.shields.io/badge/Argo_CD-EF7B4D?logo=Argo&logoColor=white"/>
+<img src="https://img.shields.io/badge/Argo_Workflows-EF7B4D?logo=Argo&logoColor=white"/>
+<img src="https://img.shields.io/badge/Argo_Events-EF7B4D?logo=Argo&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Authentik-FD4B2D?logo=Authentik&logoColor=white"/>
+<img src="https://img.shields.io/badge/Keycloak-4D4D4D?logo=Keycloak&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Cilium-F8C517?logo=Cilium&logoColor=white"/>
 <img src="https://img.shields.io/badge/Istio-466BB0?logo=Istio&logoColor=white"/>
 <img src="https://img.shields.io/badge/GitLab-FC6D26?logo=GitLab&logoColor=white"/>
-<img src="https://img.shields.io/badge/Authentik-FD4B2D?logo=Authentik&logoColor=white"/>
-<img src="https://img.shields.io/badge/Keycloak-466BB0?logo=Istio&logoColor=white"/>
-<img src="https://img.shields.io/badge/Istio-466BB0?logo=Istio&logoColor=white"/>
-<img src="https://img.shields.io/badge/Istio-466BB0?logo=Istio&logoColor=white"/>
-<img src="https://img.shields.io/badge/Istio-466BB0?logo=Istio&logoColor=white"/>
-<img src="https://img.shields.io/badge/Istio-466BB0?logo=Istio&logoColor=white"/>
-<img src="https://img.shields.io/badge/Istio-466BB0?logo=Istio&logoColor=white"/>
-<img src="https://img.shields.io/badge/Istio-466BB0?logo=Istio&logoColor=white"/>
-<img src="https://img.shields.io/badge/Istio-466BB0?logo=Istio&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Grafana-F46800?logo=Grafana&logoColor=white"/>
+<img src="https://img.shields.io/badge/Prometheus-E6522C?logo=Prometheus&logoColor=white"/>
+
+
+<img src="https://img.shields.io/badge/Harbor-60B932?logo=Harbor&logoColor=white"/>
+<img src="https://img.shields.io/badge/Cert_Manager-326CE5"/>
+<img src="https://img.shields.io/badge/Kyverno-0066CC"/>
+<img src="https://img.shields.io/badge/Velero-1B67B4"/>
 
 ---
 # 🎖️ 자격사항
