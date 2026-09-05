@@ -104,6 +104,7 @@ tagline: |-
 > > - OSS(GitLab, Loki, Jenkins) 구축 지원
 > > 
 > > **[한국광해광업공단] VKS & PrivateAI 설계/PoC/구축** <sub>2026.03. ~ 2026.05.</sub>
+> > - VKS 구축
 > > - ==글로벌 최초== VCF Private AI Service PoC
 > > 
 > > **[삼성전자 MX] VMware TKGm 운영 지원** <sub>2024.06. ~ </sub>
@@ -123,7 +124,7 @@ tagline: |-
 
 # 🧑‍💻 프로젝트
 
-#### Kluster Provisioner<sub> 2026.08. ~ </sub>
+### Kluster Provisioner<sub> 2026.08. ~ </sub>
 > **Hypervisor 종속성을 최소화하는 OSS 기반 VM 및 Cluster 프로비저닝 툴**
 > - KubeBuilder 기반 CRD 및 Operator 개발
 > - Argo Project 기반 VM 프로비저닝 워크플로우
@@ -131,22 +132,21 @@ tagline: |-
 
 ---
 
-#### 온프레미스 구축 <sub> 2025.02. ~ </sub>
+### 온프레미스 구축 <sub> 2025.02. ~ </sub>
 > **개인 로컬에서 운용하는 K8S 기반 온프레미스 환경 구축**
 > - Proxmox, OPNsense, TrueNAS를 통한 인프라 구축 및 쿠버네티스 클러스터 연동
 > - Keepalived 및 HAProxy를 통한 고가용성 진입점 구성
-> - Democratic CSI를 통한 오픈소스 CSI 구축
-> - Grafana, Loki, Prometheus 기반 중앙관리 형 플랫폼/애플리케이션 모니터링 구축
+> - Grafana, Loki, Prometheus 기반 중앙관리 형 플랫폼/애플리케이션 모니터링 환경 구성
 > - Cert Manager 기반 클러스터 내부 인증서 관리
 > - OSS 생태계 내 Micro-Service 관리
 > 	- React(Vite, Next), Spring, Python 등 샘플 마이크로 서비스 배포 구성
 > 	- ArgoCD 및 Github ARC 기반 App of apps CI/CD 파이프라인 구성
-> 	- Istio, Kiali 기반 마이크로서비스 메시 및 모니터링 구현
+> 	- Istio, Kiali 기반 마이크로서비스 메시 및 모니터링 환경 구성
 > - (Legacy)Rancher 기반 중앙 관리 멀티 클러스터 환경 구축
 
 ---
 
-#### On Premiser <sub> 2023.04. ~ 2023.09 </sub>
+### On Premiser <sub> 2023.04. ~ 2023.09 </sub>
 > **웹 기반 Private 클라우드 플랫폼 개발**
 > - 5개의 서비스에 대해 Docker 기반 컨테이너 인프라 및 네트워크 구축
 > - Easy-to-build를 테마로, docker-compose를 통해 명령어 한 줄로 배포할 수 있도록 구성
@@ -156,7 +156,7 @@ tagline: |-
 
 <div className="page"/>
 
-#### 개인 맞춤 정보 제공 전자 게시판 <sub> 2021.10. ~ 2022.04. | IXLAB </sub>
+### 개인 맞춤 정보 제공 전자 게시판 <sub> 2021.10. ~ 2022.04. | IXLAB </sub>
 > **교내 스마트 게시판 개발**
 > - 3개의 노드에 대해 베어메탈 인프라 구축
 > - Python의 Flask 프레임워크를 통한 REST API 개발
@@ -164,7 +164,7 @@ tagline: |-
 
 ---
 
-#### 객체 탐지 데이터 및 학습 관리 시스템 <sub> 2021.01. ~ 2021.08. | IXLAB </sub>
+### 객체 탐지 데이터 및 학습 관리 시스템 <sub> 2021.01. ~ 2021.08. | IXLAB </sub>
 > **웹 기반 Object detection 분야 MLOps 및 데이터 시각화 툴**
 > - 오픈소스(COCO Annotator) 역공학 과정을 통한 벤치마킹
 > - 6개의 서비스에 대해 Docker 기반 컨테이너 인프라 및 네트워크 제어
