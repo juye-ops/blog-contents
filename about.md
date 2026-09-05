@@ -90,36 +90,34 @@ tagline: |-
 
 # 💼 경력
 
-### 데이타솔루션 | AI테크서비스팀 <sub> 2024.04. ~  </sub>
-
-> ### 외부 구축/운영 지원 및 컨설팅
-> **[한화생명] VKS 구축** <sub>2026.08. ~ </sub>
-> - VKS(QA) 구축
-> - ==국내 최초== Avi Loadbalancer의 GSLB 구축
-> - ArgoCD Operator(Supervisor Service) 구축 지원
-> 
-> **[SK머티리얼즈] VKS 구축** <sub>2026.07. ~ </sub>
-> - VKS 구축
-> - VCF-Support & Third-party OSS 구축 지원
-> - Keycloak - Pinniped 기반 kubeconfig 권한 분리
-> - OSS(GitLab, Loki, Jenkins) 구축 지원
-> 
-> **[한국광해광업공단] VKS & PrivateAI 설계/PoC/구축** <sub>2026.03. ~ 2026.05.</sub>
-> - ==글로벌 최초== VCF Private AI Service PoC
-> 
-> **[삼성전자 MX] VMware TKGm 운영 지원** <sub>2024.06. ~ </sub>
-> - vSphere 환경 및 Tanzu Kubernetes 플랫폼 운영 지원
-> 	- PM 작업 7회
-> 	- VMware TKGm 및 TMC-SM 업그레이드
-> 	- Velero 기반 Cold DR(재해복구) 환경 구축
-> 	- Tanzu-Support OSS 기반 운영 지원
-> - VKS 플랫폼 마이그레이션 및 구축 프로세스 수립
-> - 테스트베드 구축 및 Bash 스크립트를 활용한 반복 프로세스 자동화
-> 
-> ### 사내 VKS (vSphere Kubernetes Service) 시스템 구축
-> - Supervisor 배포 및 VyOS 기반의 L2/L3 VLAN 제어 체계 수립
-> - ClusterAPI를 활용하여 유연한 클러스터 환경 최적화
-> - 제한된 라이선스 환경에서 OSS 기반 설치 진행
+> [!abstract] 데이타솔루션 | AI테크서비스팀 <sub> 2024.04. ~  </sub>
+> > #### 구축/운영 지원 및 컨설팅
+> > **[한화생명] VKS 구축** <sub>2026.08. ~ </sub>
+> > - VKS(QA) 구축
+> > - ==국내 최초== Avi Loadbalancer의 GSLB 구축
+> > - ArgoCD Operator(Supervisor Service) 구축 지원
+> > 
+> > **[SK머티리얼즈] VKS 구축** <sub>2026.07. ~ </sub>
+> > - VKS 구축
+> > - VCF-Support & Third-party OSS 구축 지원
+> > - Keycloak - Pinniped 기반 kubeconfig 권한 분리
+> > - OSS(GitLab, Loki, Jenkins) 구축 지원
+> > 
+> > **[한국광해광업공단] VKS & PrivateAI 설계/PoC/구축** <sub>2026.03. ~ 2026.05.</sub>
+> > - ==글로벌 최초== VCF Private AI Service PoC
+> > 
+> > **[삼성전자 MX] VMware TKGm 운영 지원** <sub>2024.06. ~ </sub>
+> > - vSphere 환경 및 Tanzu Kubernetes 플랫폼 운영 지원
+> > 	- PM 작업 7회
+> > 	- VMware TKGm 및 TMC-SM 업그레이드
+> > 	- Velero 기반 Cold DR(재해복구) 환경 구축
+> > 	- Tanzu-Support OSS 기반 운영 지원
+> > - VKS 플랫폼 마이그레이션 및 구축 프로세스 수립
+> > - 테스트베드 구축 및 Bash 스크립트를 활용한 반복 프로세스 자동화
+> #### 사내 VKS (vSphere Kubernetes Service) 시스템 구축
+> > - Supervisor 배포 및 VyOS 기반의 L2/L3 VLAN 제어 체계 수립
+> > - ClusterAPI를 활용하여 유연한 클러스터 환경 최적화
+> > - 제한된 라이선스 환경에서 OSS 기반 설치 진행 
 
 <div className="page"/>
 
