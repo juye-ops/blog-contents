@@ -137,7 +137,7 @@ tagline: |-
 > - 6개의 서비스에 대해 Docker 기반 컨테이너 인프라 및 네트워크 제어
 > - Python의 Flask 프레임워크를 통한 REST API 제어
 
-<div class='page'/>
+<div className='page'/>
 
 # 🎓 학력
 ## 금오공과대학교  <sub> 2017.03 ~ 2023.02. </sub>
