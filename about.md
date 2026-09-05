@@ -91,7 +91,7 @@ tagline: |-
 # 💼 경력
 
 > [!abstract] 데이타솔루션 | AI테크서비스팀 <sub> 2024.04. ~  </sub>
-> > #### 구축/운영 지원 및 컨설팅
+> ### 구축/운영 지원 및 컨설팅
 > > **[한화생명] VKS 구축** <sub>2026.08. ~ </sub>
 > > - VKS(QA) 구축
 > > - ==국내 최초== Avi Loadbalancer의 GSLB 구축
@@ -114,7 +114,7 @@ tagline: |-
 > > 	- Tanzu-Support OSS 기반 운영 지원
 > > - VKS 플랫폼 마이그레이션 및 구축 프로세스 수립
 > > - 테스트베드 구축 및 Bash 스크립트를 활용한 반복 프로세스 자동화
-> #### 사내 VKS (vSphere Kubernetes Service) 시스템 구축
+> ### 사내 VKS (vSphere Kubernetes Service) 시스템 구축
 > > - Supervisor 배포 및 VyOS 기반의 L2/L3 VLAN 제어 체계 수립
 > > - ClusterAPI를 활용하여 유연한 클러스터 환경 최적화
 > > - 제한된 라이선스 환경에서 OSS 기반 설치 진행 
@@ -123,7 +123,7 @@ tagline: |-
 
 # 🧑‍💻 프로젝트
 
->[!abstract] Kluster Provisioner<sub> 2026.08. ~ </sub>
+#### Kluster Provisioner<sub> 2026.08. ~ </sub>
 > **Hypervisor 종속성을 최소화하는 OSS 기반 VM 및 Cluster 프로비저닝 툴**
 > - KubeBuilder 기반 CRD 및 Operator 개발
 > - Argo Project 기반 VM 프로비저닝 워크플로우
@@ -131,7 +131,7 @@ tagline: |-
 
 ---
 
->[!abstract] 온프레미스 구축 <sub> 2025.02. ~ </sub>
+#### 온프레미스 구축 <sub> 2025.02. ~ </sub>
 > **개인 로컬에서 운용하는 K8S 기반 온프레미스 환경 구축**
 > - Proxmox, OPNsense, TrueNAS를 통한 인프라 구축 및 쿠버네티스 클러스터 연동
 > - Keepalived 및 HAProxy를 통한 고가용성 진입점 구성
@@ -146,7 +146,7 @@ tagline: |-
 
 ---
 
->[!abstract] On Premiser <sub> 2023.04. ~ 2023.09 </sub>
+#### On Premiser <sub> 2023.04. ~ 2023.09 </sub>
 > **웹 기반 Private 클라우드 플랫폼 개발**
 > - 5개의 서비스에 대해 Docker 기반 컨테이너 인프라 및 네트워크 구축
 > - Easy-to-build를 테마로, docker-compose를 통해 명령어 한 줄로 배포할 수 있도록 구성
@@ -156,7 +156,7 @@ tagline: |-
 
 <div className="page"/>
 
->[!abstract] 개인 맞춤 정보 제공 전자 게시판 <sub> 2021.10. ~ 2022.04. | IXLAB </sub>
+#### 개인 맞춤 정보 제공 전자 게시판 <sub> 2021.10. ~ 2022.04. | IXLAB </sub>
 > **교내 스마트 게시판 개발**
 > - 3개의 노드에 대해 베어메탈 인프라 구축
 > - Python의 Flask 프레임워크를 통한 REST API 개발
@@ -164,7 +164,7 @@ tagline: |-
 
 ---
 
->[!abstract] 객체 탐지 데이터 및 학습 관리 시스템 <sub> 2021.01. ~ 2021.08. | IXLAB </sub>
+#### 객체 탐지 데이터 및 학습 관리 시스템 <sub> 2021.01. ~ 2021.08. | IXLAB </sub>
 > **웹 기반 Object detection 분야 MLOps 및 데이터 시각화 툴**
 > - 오픈소스(COCO Annotator) 역공학 과정을 통한 벤치마킹
 > - 6개의 서비스에 대해 Docker 기반 컨테이너 인프라 및 네트워크 제어
