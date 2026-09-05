@@ -9,45 +9,27 @@ tagline: |-
   멀티클러스터 관리와 CI/CD 파이프라인 최적화 경험을 바탕으로,
   인프라 효율화 및 빠른 애플리케이션 라이프사이클을 관리하는 데에 강점을 가지고 있습니다.
 ---
-# 🎓 학력
-## 금오공과대학교  | 2017.03 ~ 2023.02.
-> **컴퓨터공학과 학사**
-> - 일반 학점: 4.12
-> - 전공 학점: 4.24 
 
-[IXLAB] 학부 연구생
-- 연구실 구성원 별 컨테이너 기반 연구 환경 제공
-- 지자체 중소기업 혁신 사업 프로젝트에서 인프라 개발 및 엔지니어링 수행
-
-신입생 및 알고리즘 전공 멘토
-- 신입생의 대학 적응 도모를 위한 교내 활동 장려
-- Python 및 알고리즘 멘토로서 학업 능력 향상 지원
-
----
-# 🚀 외부활동
-
-## [네이버 커넥트재단]부스트캠프 AI Tech 4기
-> 2022.09. ~ 2023.02.
-- CV 도메인 및 프로덕트 서빙 기본 개념 학습
-- 협업 능력 향상을 위한 Git 브랜치 예제 구현 및 관리
-
-## 근골격계 동영상 데이터 인공지능 모델 알고리즘 개발 해커톤
-> 2021.11. ~ 2021.12.
-- 재활 운동 자세 별 동영상 데이터에 대한 인공지능 분류 모델 개발
-- 우수상(2위) 수상
-
-<div className="page"/>
 
 # 🛠 기술 스택
 
-### **Infrastructure**
-<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white"/> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/> <img src="https://img.shields.io/badge/vSphere-737373?style=flat-square&logo=vmware&logoColor=white"/>
+### Infrastructure
+<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white"/>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
+<img src="https://img.shields.io/badge/vSphere-737373?style=flat-square&logo=vmware&logoColor=white"/>
 
-### **OS & Tools**
-<img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white"/> <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white"/> <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
+### OS & Tools
+<img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white"/>
+<img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white"/>
+<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
 
-### **Development**
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=white"/>
+### Development
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=white"/>
+
+### OSS
+<img src="https://img.shields.io/badge/ArgoCD-EF7B4D?&style=plastic&logo=Argo&logoColor=white"/>
+<img src="https://img.shields.io/badge/Istio-EF7B4D?&style=plastic&logo=Argo&logoColor=white"/>
 
 ---
 # 🎖️ 자격사항
@@ -66,7 +48,7 @@ tagline: |-
 
 # 💼 경력
 
-## 데이타솔루션 | AI테크서비스팀 | 2024.04. ~ 
+## 데이타솔루션 | AI테크서비스팀 <sub> 2024.04. ~  </sub>
 
 > ### 외부 구축/운영 지원 및 컨설팅
 > **[한화생명] VKS 구축** <sub>2026.08. ~ </sub>
@@ -101,7 +83,9 @@ tagline: |-
 
 # 🧑‍💻 프로젝트
 
-## 온프레미스 구축 | 2025.02. ~
+## 
+
+## 온프레미스 구축 <sub> 2025.02. ~ </sub>
 > ### 개인 로컬에서 운용하는 K8S 기반 온프레미스 환경 구축
 > - Proxmox, OPNsense, TrueNAS를 통한 인프라 구축 및 쿠버네티스 클러스터 연동
 > - Keepalived 및 HAProxy를 통한 고가용성 진입점 구성
@@ -115,7 +99,7 @@ tagline: |-
 > - (Legacy)Rancher 기반 중앙 관리 멀티 클러스터 환경 구축
 
 ---
-## On Premiser | 2023.04. ~ 2023.09.
+## On Premiser <sub> 2023.04. ~ 2023.09 </sub>
 > ### 웹 기반 Private 클라우드 플랫폼 개발
 > - 5개의 서비스에 대해 Docker 기반 컨테이너 인프라 및 네트워크 구축
 > - Easy-to-build를 테마로, docker-compose를 통해 명령어 한 줄로 배포할 수 있도록 구성
@@ -124,15 +108,44 @@ tagline: |-
 > - 오픈소스(Docker-py, Code-server 등) API 활용에 따른 생산성 향상
 
 ---
-## 개인 맞춤 정보 제공 전자 게시판 | 2021.10. ~ 2022.04.
+## 개인 맞춤 정보 제공 전자 게시판 <sub> 2021.10. ~ 2022.04. </sub>
 > ### [IXLAB] 교내 스마트 게시판 전시
 > - 3개의 노드에 대해 베어메탈 인프라 구축
 > - Python의 Flask 프레임워크를 통한 REST API 개발
 > - Proxy 및 방화벽 제어
 
 ---
-## 객체 탐지 데이터 및 학습 관리를 위한 웹 기반 딥러닝 지원 시스템 | 2021.01. ~ 2021.08.
+## 객체 탐지 데이터 및 학습 관리를 위한 웹 기반 딥러닝 지원 시스템 <sub> 2021.01. ~ 2021.08. </sub>
 > ### [IXLAB] 웹 기반 Object detection 분야 MLOps 및 데이터 시각화 툴
 > - 오픈소스(COCO Annotator) 역공학 과정을 통한 벤치마킹
 > - 6개의 서비스에 대해 Docker 기반 컨테이너 인프라 및 네트워크 제어
 > - Python의 Flask 프레임워크를 통한 REST API 제어
+
+<div class='page'/>
+
+# 🎓 학력
+## 금오공과대학교  <sub> 2017.03 ~ 2023.02. </sub>
+> **컴퓨터공학과 학사**
+> - 일반 학점: 4.12
+> - 전공 학점: 4.24 
+
+[IXLAB] 학부 연구생
+- 연구실 구성원 별 컨테이너 기반 연구 환경 제공
+- 지자체 중소기업 혁신 사업 프로젝트에서 인프라 개발 및 엔지니어링 수행
+
+신입생 및 알고리즘 전공 멘토
+- 신입생의 대학 적응 도모를 위한 교내 활동 장려
+- Python 및 알고리즘 멘토로서 학업 능력 향상 지원
+
+---
+# 🚀 외부활동
+
+## [네이버 커넥트재단]부스트캠프 AI Tech 4기 <sub> 2022.09. ~ 2023.02. </sub>
+- CV 도메인 및 프로덕트 서빙 기본 개념 학습
+- 협업 능력 향상을 위한 Git 브랜치 예제 구현 및 관리
+
+## 근골격계 동영상 데이터 인공지능 모델 알고리즘 개발 해커톤 <sub>2021.11. ~ 2021.12.</sub>
+- 재활 운동 자세 별 동영상 데이터에 대한 인공지능 분류 모델 개발
+- 우수상(2위) 수상
+
+<div className="page"/>
