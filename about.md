@@ -50,16 +50,16 @@ tagline: |-
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=white"/>
 
 ---
-# 🏆 수상
-- **한국정보기술학회 2022년도 하계종합학술대회 및 대학생논문경진대회** | 금상 수상
-- **2021 근골격계 동영상 데이터 인공지능 모델 알고리즘 개발 해커톤** | 우수상(2위) 수상
-
----
 # 🎖️ 자격사항
 - CKA; Certified Kubernetes Administrator
 - OPIc(English) - IH
 - 정보처리기사
 - 네트워크관리사 2급
+
+---
+# 🏆 수상
+- **한국정보기술학회 2022년도 하계종합학술대회 및 대학생논문경진대회** | 금상 수상
+- **2021 근골격계 동영상 데이터 인공지능 모델 알고리즘 개발 해커톤** | 우수상(2위) 수상
 
 
 <div className="page"/>
