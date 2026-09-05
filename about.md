@@ -37,12 +37,11 @@ tagline: |-
 
 <img src="https://img.shields.io/badge/Cilium-F8C517?logo=Cilium&logoColor=white"/>
 <img src="https://img.shields.io/badge/Istio-466BB0?logo=Istio&logoColor=white"/>
-<img src="https://img.shields.io/badge/GitLab-FC6D26?logo=GitLab&logoColor=white"/>
 
 <img src="https://img.shields.io/badge/Grafana-F46800?logo=Grafana&logoColor=white"/>
 <img src="https://img.shields.io/badge/Prometheus-E6522C?logo=Prometheus&logoColor=white"/>
 
-
+<img src="https://img.shields.io/badge/GitLab-FC6D26?logo=GitLab&logoColor=white"/>
 <img src="https://img.shields.io/badge/Harbor-60B932?logo=Harbor&logoColor=white"/>
 <img src="https://img.shields.io/badge/Cert_Manager-326CE5"/>
 <img src="https://img.shields.io/badge/Kyverno-0066CC"/>
@@ -100,10 +99,10 @@ tagline: |-
 
 # 🧑‍💻 프로젝트
 
-## 
+## Kluster
 
 ## 온프레미스 구축 <sub> 2025.02. ~ </sub>
-> ### 개인 로컬에서 운용하는 K8S 기반 온프레미스 환경 구축
+> **개인 로컬에서 운용하는 K8S 기반 온프레미스 환경 구축**
 > - Proxmox, OPNsense, TrueNAS를 통한 인프라 구축 및 쿠버네티스 클러스터 연동
 > - Keepalived 및 HAProxy를 통한 고가용성 진입점 구성
 > - Democratic CSI를 통한 오픈소스 CSI 구축
@@ -117,7 +116,7 @@ tagline: |-
 
 ---
 ## On Premiser <sub> 2023.04. ~ 2023.09 </sub>
-> ### 웹 기반 Private 클라우드 플랫폼 개발
+> **웹 기반 Private 클라우드 플랫폼 개발**
 > - 5개의 서비스에 대해 Docker 기반 컨테이너 인프라 및 네트워크 구축
 > - Easy-to-build를 테마로, docker-compose를 통해 명령어 한 줄로 배포할 수 있도록 구성
 > - Python의 FastAPI 프레임워크를 통한 REST API 개발
@@ -125,15 +124,15 @@ tagline: |-
 > - 오픈소스(Docker-py, Code-server 등) API 활용에 따른 생산성 향상
 
 ---
-## 개인 맞춤 정보 제공 전자 게시판 <sub> 2021.10. ~ 2022.04. </sub>
-> ### [IXLAB] 교내 스마트 게시판 전시
+## 개인 맞춤 정보 제공 전자 게시판 <sub> 2021.10. ~ 2022.04. | IXLAB </sub>
+> **교내 스마트 게시판 개발**
 > - 3개의 노드에 대해 베어메탈 인프라 구축
 > - Python의 Flask 프레임워크를 통한 REST API 개발
 > - Proxy 및 방화벽 제어
 
 ---
-## 객체 탐지 데이터 및 학습 관리를 위한 웹 기반 딥러닝 지원 시스템 <sub> 2021.01. ~ 2021.08. </sub>
-> ### [IXLAB] 웹 기반 Object detection 분야 MLOps 및 데이터 시각화 툴
+## 객체 탐지 데이터 및 학습 관리를 위한 웹 기반 딥러닝 지원 시스템 <sub> 2021.01. ~ 2021.08. | IXLAB </sub>
+> **웹 기반 Object detection 분야 MLOps 및 데이터 시각화 툴**
 > - 오픈소스(COCO Annotator) 역공학 과정을 통한 벤치마킹
 > - 6개의 서비스에 대해 Docker 기반 컨테이너 인프라 및 네트워크 제어
 > - Python의 Flask 프레임워크를 통한 REST API 제어
@@ -164,5 +163,3 @@ tagline: |-
 ## 근골격계 동영상 데이터 인공지능 모델 알고리즘 개발 해커톤 <sub>2021.11. ~ 2021.12.</sub>
 - 재활 운동 자세 별 동영상 데이터에 대한 인공지능 분류 모델 개발
 - 우수상(2위) 수상
-
-<div className="page"/>
