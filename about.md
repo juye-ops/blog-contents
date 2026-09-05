@@ -35,6 +35,8 @@ tagline: |-
 - 재활 운동 자세 별 동영상 데이터에 대한 인공지능 분류 모델 개발
 - 우수상(2위) 수상
 
+<div className="page"/>
+
 # 🛠 기술 스택
 
 ### Infrastructure
@@ -129,6 +131,8 @@ tagline: |-
 > - Argo Project 기반 VM 프로비저닝 워크플로우
 > - OpenTofu 기반 IaC VM 프로비저닝
 
+---
+
 ## 온프레미스 구축 <sub> 2025.02. ~ </sub>
 > **개인 로컬에서 운용하는 K8S 기반 온프레미스 환경 구축**
 > - Proxmox, OPNsense, TrueNAS를 통한 인프라 구축 및 쿠버네티스 클러스터 연동
@@ -143,6 +147,7 @@ tagline: |-
 > - (Legacy)Rancher 기반 중앙 관리 멀티 클러스터 환경 구축
 
 ---
+
 ## On Premiser <sub> 2023.04. ~ 2023.09 </sub>
 > **웹 기반 Private 클라우드 플랫폼 개발**
 > - 5개의 서비스에 대해 Docker 기반 컨테이너 인프라 및 네트워크 구축
@@ -151,7 +156,8 @@ tagline: |-
 > - Nginx 기반 프록시 서버 구축 및 MySQL 스키마 설계 및 DAO 구현
 > - 오픈소스(Docker-py, Code-server 등) API 활용에 따른 생산성 향상
 
----
+<div className="page"/>
+
 ## 개인 맞춤 정보 제공 전자 게시판 <sub> 2021.10. ~ 2022.04. | IXLAB </sub>
 > **교내 스마트 게시판 개발**
 > - 3개의 노드에 대해 베어메탈 인프라 구축
@@ -159,6 +165,7 @@ tagline: |-
 > - Proxy 및 방화벽 제어
 
 ---
+
 ## 객체 탐지 데이터 및 학습 관리 시스템 <sub> 2021.01. ~ 2021.08. | IXLAB </sub>
 > **웹 기반 Object detection 분야 MLOps 및 데이터 시각화 툴**
 > - 오픈소스(COCO Annotator) 역공학 과정을 통한 벤치마킹
