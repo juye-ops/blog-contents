@@ -14,22 +14,32 @@ tagline: |-
 # 🛠 기술 스택
 
 ### Infrastructure
-<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white"/>
-<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
-<img src="https://img.shields.io/badge/vSphere-737373?style=flat-square&logo=vmware&logoColor=white"/>
+<img src="https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white"/>
+<img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white"/>
+<img src="https://img.shields.io/badge/vSphere-737373?logo=vmware&logoColor=white"/>
 
 ### OS & Tools
-<img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white"/>
-<img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white"/>
-<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
+<img src="https://img.shields.io/badge/Ubuntu-E95420?logo=ubuntu&logoColor=white"/>
+<img src="https://img.shields.io/badge/Bash-4EAA25?logo=gnubash&logoColor=white"/>
+<img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white"/>
 
 ### Development
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=white"/>
+<img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white"/>
 
 ### OSS
-<img src="https://img.shields.io/badge/ArgoCD-EF7B4D?&style=plastic&logo=Argo&logoColor=white"/>
-<img src="https://img.shields.io/badge/Istio-EF7B4D?&style=plastic&logo=Argo&logoColor=white"/>
+<img src="https://img.shields.io/badge/ArgoCD-EF7B4D?logo=Argo&logoColor=white"/>
+<img src="https://img.shields.io/badge/Istio-466BB0?logo=Istio&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitLab-FC6D26?logo=GitLab&logoColor=white"/>
+<img src="https://img.shields.io/badge/Authentik-FD4B2D?logo=Authentik&logoColor=white"/>
+<img src="https://img.shields.io/badge/Keycloak-466BB0?logo=Istio&logoColor=white"/>
+<img src="https://img.shields.io/badge/Istio-466BB0?logo=Istio&logoColor=white"/>
+<img src="https://img.shields.io/badge/Istio-466BB0?logo=Istio&logoColor=white"/>
+<img src="https://img.shields.io/badge/Istio-466BB0?logo=Istio&logoColor=white"/>
+<img src="https://img.shields.io/badge/Istio-466BB0?logo=Istio&logoColor=white"/>
+<img src="https://img.shields.io/badge/Istio-466BB0?logo=Istio&logoColor=white"/>
+<img src="https://img.shields.io/badge/Istio-466BB0?logo=Istio&logoColor=white"/>
+<img src="https://img.shields.io/badge/Istio-466BB0?logo=Istio&logoColor=white"/>
 
 ---
 # 🎖️ 자격사항
