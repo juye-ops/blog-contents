@@ -134,13 +134,14 @@ tagline: |-
 ### 온프레미스 구축 <sub> 2025.02. ~ </sub>
 > **개인 로컬에서 운용하는 K8S 기반 온프레미스 환경 구축**
 > - Proxmox, OPNsense, TrueNAS를 통한 인프라 구축 및 쿠버네티스 클러스터 연동
+> - ArgoCD ApplicationSets를 통한 멀티 클러스터 중앙 관리 생태계 구축
 > - Keepalived 및 HAProxy를 통한 고가용성 진입점 구성
 > - Grafana, Loki, Prometheus 기반 중앙관리 형 플랫폼/애플리케이션 모니터링 환경 구성
 > - Cert Manager 기반 클러스터 내부 인증서 관리
 > - OSS 생태계 내 Micro-Service 관리
 > 	- React(Vite, Next), Spring, Python 등 샘플 마이크로 서비스 배포 구성
 > 	- ArgoCD 및 Github ARC 기반 App of apps CI/CD 파이프라인 구성
-> 	- Istio, Kiali 기반 마이크로서비스 메시 및 모니터링 환경 구성
+> 	- (Legacy) Istio, Kiali 기반 마이크로서비스 메시 및 모니터링 환경 구성
 > - (Legacy)Rancher 기반 중앙 관리 멀티 클러스터 환경 구축
 
 ### On Premiser <sub> 2023.04. ~ 2023.09 </sub>
