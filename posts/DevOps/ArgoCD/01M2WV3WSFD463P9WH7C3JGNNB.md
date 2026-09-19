@@ -68,11 +68,100 @@ Argo CD는 등록된 클러스터의 API Server에 접근할 수 있어야 하�
 argocd cluster add <context-name>
 ```
 
+Management Cluster에 설치된 Argo CD가 `workload-dev`를 관리하도록 등록하려면 다음과 같이 실행한다.
 ```
 kubectl config get-contexts
-
 CURRENT   NAME
 *         management
           workload-dev
           workload-prod
+```
+
+```
+argocd cluster add workload-dev
+```
+
+
+## ApplicationSet과 함께 사용하기
+
+클러스터를 Argo CD에 등록한 다음에는 ApplicationSet을 이용해 등록된 클러스터를 대상으로 Application을 자동으로 생성할 수 있다.
+
+ApplicationSet은 다양한 Generator를 제공하는데, 멀티클러스터 환경에서는 `Clusters Generator`를 사용할 수 있다.
+
+`Clusters Generator`는 Argo CD에 등록된 클러스터를 조회하고, 각 클러스터의 정보를 ApplicationSet Template에 전달한다.
+
+예를 들어 Argo CD에 다음과 같은 클러스터가 등록되어 있다고 해보자.
+
+```
+workload-dev
+workload-staging
+workload-prod
+```
+
+다음과 같이 `Clusters Generator`를 사용하면 등록된 클러스터를 기반으로 Application을 생성할 수 있다.
+
+```
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: nginx
+spec:
+  generators:
+    - clusters: {}
+
+  template:
+    metadata:
+      name: 'nginx-{{name}}'
+
+    spec:
+      project: default
+
+      source:
+        repoURL: https://github.com/example/gitops.git
+        targetRevision: main
+        path: nginx
+
+      destination:
+        server: '{{server}}'
+        namespace: nginx
+```
+
+여기서 `clusters: {}`는 Argo CD에 등록된 클러스터를 Generator의 대상으로 사용한다는 의미다.
+
+`{{name}}`과 `{{server}}`는 각 클러스터에서 가져온 정보를 Template에 주입한다.
+
+따라서 등록된 클러스터를 기준으로 다음과 같은 Application이 자동으로 생성된다.
+
+```yaml
+# 공식문서 예제
+# https://argo-cd.readthedocs.io/en/stable/user-guide/application-set/
+
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: guestbook
+spec:
+  goTemplate: true
+  goTemplateOptions: ["missingkey=error"]
+  generators:
+  - list:
+      elements:
+      - cluster: engineering-dev
+        url: https://1.2.3.4
+      - cluster: engineering-prod
+        url: https://2.4.6.8
+      - cluster: finance-preprod
+        url: https://9.8.7.6
+  template:
+    metadata:
+      name: '{{.cluster}}-guestbook'
+    spec:
+      project: my-project
+      source:
+        repoURL: https://github.com/infra-team/cluster-deployments.git
+        targetRevision: HEAD
+        path: guestbook/{{.cluster}}
+      destination:
+        server: '{{.url}}'
+        namespace: guestbook
 ```
