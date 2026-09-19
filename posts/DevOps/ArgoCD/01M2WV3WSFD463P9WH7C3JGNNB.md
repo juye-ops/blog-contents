@@ -55,8 +55,24 @@ Kubernetes 클러스터가 여러 개로 늘어나면 각 클러스터의 애플
 
 GitOps에서는 Kubernetes 클러스터에 직접 접속해서 Manifest를 수정하기보다는 Git Repository에 원하는 상태를 정의하고, Argo CD와 같은 GitOps 도구가 실제 클러스터의 상태를 Git의 상태에 맞추도록 한다.
 
-```mermaid
-graph TB
-A[입력]-->B(연산)
-A-->C(출력)
+
+## 클러스터 등록
+
+멀티클러스터 GitOps를 구성하려면 먼저 Argo CD가 관리할 Kubernetes 클러스터를 등록해야 한다.
+
+Argo CD는 등록된 클러스터의 API Server에 접근할 수 있어야 하며, 해당 클러스터에 애플리케이션을 배포할 수 있는 인증 정보와 권한이 필요하다.
+
+클러스터 등록은 Argo CD CLI를 사용하는 방법이 일반적이다.
+
+```bash
+argocd cluster add <context-name>
+```
+
+```
+kubectl config get-contexts
+
+CURRENT   NAME
+*         management
+          workload-dev
+          workload-prod
 ```
