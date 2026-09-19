@@ -21,7 +21,7 @@ ApplicationSet은 여러 개의 Argo CD `Application`을 반복해서 작성하�
 즉, **개별 Application을 관리하는 대신 Application을 생성하는 규칙을 관리하는 것이 ApplicationSet의 핵심이다.**
 
 
-> [!quote] vs Appcation
+> [!quote]- vs Appcation CRD
 > ApplicationSet을 이해하려면 먼저 Argo CD의 `Application`과 비교해보는 것이 좋다.
 > 
 > `Application`은 **하나의 Git Repository와 하나의 Kubernetes 배포 대상 사이의 GitOps 관계를 정의하는 리소스**다.
@@ -45,3 +45,18 @@ ApplicationSet은 여러 개의 Argo CD `Application`을 반복해서 작성하�
 >  ```
 
 
+# GitOps를 활용한 멀티클러스터 운영
+
+Kubernetes 클러스터가 여러 개로 늘어나면 각 클러스터의 애플리케이션과 설정을 일관된 방식으로 관리하는 것이 중요하다.
+
+이때 Git을 Single Source of Truth로 사용하고, 각 Kubernetes 클러스터의 원하는 상태를 Git에 정의하는 방식으로 멀티클러스터를 운영할 수 있다.
+
+이것이 **GitOps를 활용한 멀티클러스터 운영**이다.
+
+GitOps에서는 Kubernetes 클러스터에 직접 접속해서 Manifest를 수정하기보다는 Git Repository에 원하는 상태를 정의하고, Argo CD와 같은 GitOps 도구가 실제 클러스터의 상태를 Git의 상태에 맞추도록 한다.
+
+```mermaid
+graph TB
+A[입력]-->B(연산)
+A-->C(출력)
+```
