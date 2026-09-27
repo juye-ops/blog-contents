@@ -1,5 +1,5 @@
 ---
-title: "Argo Provisioner: Argo 기반 클러스터 생성"
+title: "Kluster: Dependency-Free 프로비저너"
 domain: Memoir
 category: Projects
 date: 2026-07-23
