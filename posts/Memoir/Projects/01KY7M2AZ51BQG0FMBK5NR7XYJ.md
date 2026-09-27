@@ -17,7 +17,7 @@ featured: true
 본 프로젝트에서는 다양한 오픈소스 솔루션을 결합하여 환경에 제약 없이 클러스터 생성을 자동화할 수 있는 방안을 제시합니다.
 쿠버네티스를 운영하기 위한 솔루션은 여럿 있으며, 그중 오픈소스로 클러스터 관리 툴로 유명한 Rancher는 CNCF의 `Certified Kubernetes - Distribution` 소프트웨어로 등록되어 있습니다. 특히 여럿 클라우드 환경에서의 프로비저닝과 여럿 오픈소스 솔루션을 지원하는 점이 강력한 장점으로 꼽히고 있습니다. 하지만 결국 Rancher의 Node Driver 지원 여부, SUSE 생태계에 강력히 종속되어 있어 라이선스에 대한 잠재적인 우려, Rancher의 유휴 리소스가 높은 등, 커뮤니티 레벨에서 사용하기엔 많은 제약점이 잇따릅니다.. 따라서 자체 개발 Operator와 CNCF의 Argo와 OpenTofu 기반으로 한 오픈소스 기반 쿠버네티스 클러스터 프로비저너를 구현합니다.
 
-## **개발 환경 & 아키텍처**
+> ## **개발 환경 & 아키텍처**
 - Kubernetes 컴포넌트
 	- `Argo CD`
 	- `Argo Events`
@@ -31,11 +31,6 @@ featured: true
 	- `Proxmox`
 	- ~~`Harvester`~~
 
----
-
-# 📜 **개발 방법**
-> [!quote] 참조 용 콜아웃(필요 없을 시 제거)
-
 ## 1. Kubernetes 컴포넌트 선별
 ### 1-1. Kluster
 [[01KZ0DWBSG95ZHW169XGBGVQAE|Kluster]]는 자체 개발 클러스터 리소스 관리용 Operator입니다. Cluster 프로비저닝을 위한 CRD를 관리합니다.
@@ -46,14 +41,9 @@ featured: true
 ### 1-2. Argo Project
 Argo는 CNCF의 Graduated 프로젝트로서, 대표적으로 ArgoCD가 있습니다.
 
-#### ArgoCD
-Cluster 혹은 Machine 리소스를 Helm Chart로 배포하면 그를 바탕으로 쿠버네티스의 리소스를 관리하고자 합니다.
-
-#### Argo Events
-ArgoCD에서 배포된 Cluster, Machine등의 리소스를 감지하여 Machine 생성을 준비합니다.
-
-#### Argo Workflow
-Argo Events를 통해 리소스가 감지되면 이를 바탕으로 Machine을 초기화합니다. `OpenTofu`를 통해 VM을 프로비저닝하고 `Ansible`을 통해 Clustering을 진행합니다.
+- **ArgoCD**: Cluster 혹은 Machine 리소스를 Helm Chart로 배포하면 그를 바탕으로 쿠버네티스의 리소스를 관리하고자 합니다.
+- **Argo Events**: ArgoCD에서 배포된 Cluster, Machine등의 리소스를 감지하여 Machine 생성을 준비합니다.
+- **Argo Workflow**: Argo Events를 통해 리소스가 감지되면 이를 바탕으로 Machine을 초기화합니다. `OpenTofu`를 통해 VM을 프로비저닝하고 `Ansible`을 통해 Clustering을 진행합니다.
 
 
 ## 2. IaC 선별
@@ -88,14 +78,10 @@ Kubernetes 클러스터 자동화는 Ansible을 활용합니다. Ansible 또한 
 	- 외부 소프트웨어와의 낮은 호환성
 	- 인프라 레벨 A to Z 구축 필요
 
-#### Harvester
-- 장점
-	- Infra 레벨 Built-in
-	- Kubernetes 명령어로 Hypervisor 제어
-	- HCI를 위한 다양한 오픈소스를 Add-on 형태로 지원
-- 단점
-	- 유휴 메모리 9GB 내외(Monitoring Add-on 배포 시 12GB 내외)
-	- Rancher 별도 관리 필요
+---
+
+# 📜 **개발 방법**
+> [!quote] 참조 용 콜아웃(필요 없을 시 제거)
 
 ---
 
@@ -106,3 +92,5 @@ Kubernetes 클러스터 자동화는 Ansible을 활용합니다. Ansible 또한 
 
 # 🔗 관련 링크
 - 내용
+
+[^1]: ㅁㄴㅇㅁㄴㅇ]]]
