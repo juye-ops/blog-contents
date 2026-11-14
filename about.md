@@ -110,7 +110,7 @@ tagline: |-
 ### Kluster Provisioner<sub> 2026.08. ~ </sub>
 > **Hypervisor 종속성을 최소화하는 OSS 기반 VM 및 Cluster 프로비저닝 툴**
 > - KubeBuilder 기반 CRD 및 Operator 개발
-> - Argo Project 기반 VM 프로비저닝 워크플로우 구현
+> - Argo Events/Workflows 기반 VM 프로비저닝 자동화
 > - OpenTofu 기반 IaC VM 프로비저닝 구현
 
 ### 온프레미스 구축 <sub> 2025.02. ~ </sub>
@@ -136,14 +136,6 @@ tagline: |-
 
 <div className="page"/>
 
-### 개인 맞춤 정보 제공 전자 게시판 <sub> 2021.10. ~ 2022.04. | IXLAB </sub>
-> **교내 스마트 게시판 개발**
-> - 3개의 노드에 대해 베어메탈 인프라 구축
-> - Python의 Flask 프레임워크를 통한 REST API 개발
-> - Proxy 및 방화벽 제어
-
-### 객체 탐지 데이터 및 학습 관리 시스템 <sub> 2021.01. ~ 2021.08. | IXLAB </sub>
-> **웹 기반 Object detection 분야 MLOps 및 데이터 시각화 툴**
-> - 오픈소스(COCO Annotator) 역공학 과정을 통한 벤치마킹
-> - 6개의 서비스에 대해 Docker 기반 컨테이너 인프라 및 네트워크 제어
-> - Python의 Flask 프레임워크를 통한 REST API 제어
+### 기타 프로젝트
+- **개인 맞춤 정보 제공 전자 게시판 <sub> 2021.10. ~ 2022.04. </sub>**: 교내 스마트 게시판 개발
+- **객체 탐지 데이터 및 학습 관리 시스템 <sub> 2021.01. ~ 2021.08. </sub>**: 웹 기반 Object detection 분야 MLOps 및 데이터 시각화 툴
