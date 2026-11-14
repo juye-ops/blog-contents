@@ -90,12 +90,13 @@ tagline: |-
 
 # 💼 경력
 
-> [!abstract] 데이타솔루션 | AI테크서비스팀 <sub> 2024.04. ~  </sub>
+> [!abstract] 데이타솔루션 | AI테크서비스팀 <sup> 2024.04. ~  </sup>
 > ### vSphere 8 & VCF 9 쿠버네티스 플랫폼(TKGm, VKS) 구축 및 운영 
-> - OSS 구축 및 연동 담당 인력
+> - 고객사 OSS 구축 및 연동 담당 인력
 > - ==**국내 최초**== Avi Loadbalancer의 GSLB 구축
 > - ==**글로벌 최초**== VCF 9 Private AI Service PoC
 > - VMware Tech Summit 2026 `Private AI` 부스 운영 지원
+> - 고객사 환경 60개의 쿠버네티스 클러스터 운영 지원
 > > **삼성전자<sup>2024.06. ~ </sup>**: vSphere 8 TKGm 운영, VCF 9 VKS 설계/구축/운영
 > > **한화생명<sup>2026.08. ~ </sup>**: VCF 9, VKS 설계/구축
 > > **SK머터리얼즈<sup>2026.07. ~ </sup>**: VKS 및 운영용 OSS 구축
