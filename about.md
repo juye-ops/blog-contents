@@ -47,7 +47,7 @@ tagline: |-
 ### Infrastructure
 <img src="https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white"/>
 <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white"/>
-<img src="https://img.shields.io/badge/vSphere-737373?logo=vmware&logoColor=white"/>
+<img src="https://img.shields.io/badge/VCF-737373?logo=vmware&logoColor=white"/>
 
 ### OS & Tools
 <img src="https://img.shields.io/badge/Ubuntu-E95420?logo=ubuntu&logoColor=white"/>
