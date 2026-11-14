@@ -44,6 +44,17 @@ tagline: |-
 
 # 🛠 기술 스택
 
+|분류|포함할 기술|
+|:-|:-|
+|Cloud & Infrastructure|<img src="https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white"/> <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white"/> <img src="https://img.shields.io/badge/VCF_9-737373?logo=vmware&logoColor=white"/>|
+|IaC & Automation|<img src="https://img.shields.io/badge/OpenTofu-FFDA18?logo=kubernetes&logoColor=white"/> <img src="https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white"/>|
+|Kubernetes & GitOps|Argo CD, Argo Workflows, Argo Events, Kubebuilder|
+|Networking|Cilium, Istio, HAProxy|
+|Observability|Prometheus, Grafana, Loki|
+|Security & Storage|cert-manager, Kyverno, Harbor, Velero|
+|Development|Go, Python, Java, React|
+|OS & Tools|Ubuntu, Git, Proxmox|
+
 ### Infrastructure
 <img src="https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white"/>
 <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white"/>
@@ -124,7 +135,7 @@ tagline: |-
 > - Proxmox, OPNsense, TrueNAS를 통한 인프라 구축 및 쿠버네티스 클러스터 연동
 > - (Legacy) Rancher 기반 중앙 관리 멀티 클러스터 환경 구축
 > - (Legacy) Istio, Kiali 기반 마이크로서비스 메시 및 모니터링 환경 구성
-> - (Legacy) Github Action Runner(ARC)를 통한 원격 CD 환경 구성
+> - (Legacy) Github Action Runner Controller(ARC)를 통한 원격 CD 환경 구성
 
 ### On Premiser <sub> 2023.04. ~ 2023.09 </sub>
 > **웹 기반 Private 클라우드 플랫폼 개발**
