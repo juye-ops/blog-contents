@@ -40,6 +40,13 @@ tagline: |-
 - **한국정보기술학회 2022년도 하계종합학술대회 및 대학생논문경진대회** | 금상 수상
 - **2021 근골격계 동영상 데이터 인공지능 모델 알고리즘 개발 해커톤** | 우수상(2위) 수상
 
+---
+# 🎖️ 자격사항
+- CKA; Certified Kubernetes Administrator
+- OPIc(English) - IH
+- 정보처리기사
+- 네트워크관리사 2급
+
 <div className="page"/>
 
 # 🛠 기술 스택
@@ -58,17 +65,9 @@ tagline: |-
 
 ---
 
-# 🎖️ 자격사항
-- CKA; Certified Kubernetes Administrator
-- OPIc(English) - IH
-- 정보처리기사
-- 네트워크관리사 2급
-
----
-
 # 💼 경력
 
-> [!abstract] 데이타솔루션 | AI테크서비스팀 <sup> 2024.04. ~  </sup>
+> [!abstract] 데이타솔루션 | AI테크서비스팀 <sub> 2024.04. ~  </sub>
 > ### vSphere 8 & VCF 9 쿠버네티스 플랫폼(TKGm, VKS) 구축 및 운영 
 > - 고객사 OSS 구축 및 연동 담당 인력
 > - ==**글로벌 최초**== VCF 9 Private AI Service PoC
