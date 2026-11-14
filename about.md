@@ -113,18 +113,18 @@ tagline: |-
 > - Argo Events/Workflows 기반 VM 프로비저닝 자동화
 > - OpenTofu 기반 IaC VM 프로비저닝 구현
 
-### 온프레미스 구축 <sub> 2025.02. ~ </sub>
+### 온프레미스 쿠버네티스 플랫폼 구축 <sub> 2025.02. ~ </sub>
 > **개인 로컬에서 운용하는 K8S 기반 온프레미스 환경 구축**
-> - ArgoCD ApplicationSets를 통한 멀티클러스터의 GitOps 중앙 관리 생태계 구축
-> - Grafana, Loki, Prometheus 기반 중앙관리 형 플랫폼/애플리케이션 모니터링 환경 구성
-> - OSS 생태계 내 Micro-Service 관리
-> 	- React(Vite, Next), Spring, Python 등 샘플 마이크로 서비스 배포 구성
-> 	- ArgoCD 및 Github ARC 기반 App of apps CI/CD 파이프라인 구성
-> 	- (Legacy) Istio, Kiali 기반 마이크로서비스 메시 및 모니터링 환경 구성
+> - Argo CD ApplicationSet를 통한 멀티클러스터의 GitOps 중앙 관리 생태계 구축
+> - Grafana, Loki, Prometheus 기반 중앙 집중형 플랫폼 및 애플리케이션 모니터링 환경 구성
+> - Argo CD 및 Workflows의 App of apps 기반 CD 파이프라인 구성
+> - React, Spring, Python 기반 샘플 마이크로 서비스 배포 구성
 > - Keepalived 및 HAProxy를 통한 고가용성 진입점 구성
-> - Cert Manager 기반 클러스터 내부 인증서 관리
+> - cert-manager 기반 클러스터 내부 인증서 관리
 > - Proxmox, OPNsense, TrueNAS를 통한 인프라 구축 및 쿠버네티스 클러스터 연동
-> - (Legacy)Rancher 기반 중앙 관리 멀티 클러스터 환경 구축
+> - (Legacy) Rancher 기반 중앙 관리 멀티 클러스터 환경 구축
+> - (Legacy) Istio, Kiali 기반 마이크로서비스 메시 및 모니터링 환경 구성
+> - (Legacy) Github Action Runner(ARC)를 통한 원격 CD 환경 구성
 
 ### On Premiser <sub> 2023.04. ~ 2023.09 </sub>
 > **웹 기반 Private 클라우드 플랫폼 개발**
@@ -132,9 +132,7 @@ tagline: |-
 > - Easy-to-build를 테마로, docker-compose를 통해 명령어 한 줄로 배포할 수 있도록 구성
 > - Python의 FastAPI 프레임워크를 통한 REST API 개발
 > - Nginx 기반 프록시 서버 구축 및 MySQL 스키마 설계 및 DAO 구현
-> - 오픈소스(Docker-py, Code-server 등) API 활용에 따른 생산성 향상
-
-<div className="page"/>
+> - 오픈소스(Docker-py, Code-server 등) API 연동을 통한 서비스 기능 구현
 
 ### 기타 프로젝트
 - **개인 맞춤 정보 제공 전자 게시판 <sub> 2021.10. ~ 2022.04. </sub>**: 교내 스마트 게시판 개발
