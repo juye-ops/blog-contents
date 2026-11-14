@@ -57,14 +57,14 @@ tagline: |-
 |OS & Tools|<img src="https://img.shields.io/badge/Ubuntu-E95420?logo=ubuntu&logoColor=white"/> <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white"/> <img src="https://img.shields.io/badge/Proxmox-E57000?logoColor=white"/>|
 
 ---
+
 # 🎖️ 자격사항
 - CKA; Certified Kubernetes Administrator
 - OPIc(English) - IH
 - 정보처리기사
 - 네트워크관리사 2급
 
-
-<div className="page"/>
+---
 
 # 💼 경력
 
