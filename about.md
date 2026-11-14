@@ -46,12 +46,13 @@ tagline: |-
 
 |분류|포함할 기술|
 |:-|:-|
-|Cloud & Infrastructure|<img src="https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white"/> <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white"/> <img src="https://img.shields.io/badge/VCF_9-737373?logo=vmware&logoColor=white"/>|
+|Cloud & Infrastructure|<img src="https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white"/> <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white"/> <img src="https://img.shields.io/badge/VCF_9VKS-737373?logo=vmware&logoColor=white"/>
 |IaC & Automation|<img src="https://img.shields.io/badge/OpenTofu-FFDA18?logo=kubernetes&logoColor=white"/> <img src="https://img.shields.io/badge/Ansible-EE0000?logo=kubernetes&logoColor=white"/> <img src="https://img.shields.io/badge/Bash-4EAA25?logo=gnubash&logoColor=white"/>|
-|Kubernetes & GitOps|<img src="https://img.shields.io/badge/Argo_CD-EF7B4D?logo=Argo&logoColor=white"/> <img src="https://img.shields.io/badge/Argo_Workflows-EF7B4D?logo=Argo&logoColor=white"/> <img src="https://img.shields.io/badge/Argo_Events-EF7B4D?logo=Argo&logoColor=white"/>|
+|CI/CD|<img src="https://img.shields.io/badge/Argo_CD-EF7B4D?logo=Argo&logoColor=white"/> <img src="https://img.shields.io/badge/Argo_Workflows-EF7B4D?logo=Argo&logoColor=white"/> <img src="https://img.shields.io/badge/Argo_Events-EF7B4D?logo=Argo&logoColor=white"/>|
 |Networking|<img src="https://img.shields.io/badge/Cilium-F8C517?logo=Cilium&logoColor=white"/> <img src="https://img.shields.io/badge/Istio-466BB0?logo=Istio&logoColor=white"/>|
-|Observability|<img src="https://img.shields.io/badge/Grafana-F46800?logo=Grafana&logoColor=white"/> <img src="https://img.shields.io/badge/Prometheus-E6522C?logo=Prometheus&logoColor=white"/> <img src="https://img.shields.io/badge/Fluent_Bit-49BDA5?logo=Fluent Bit&logoColor=white"/> |
-|Security & Storage|<img src="https://img.shields.io/badge/Harbor-60B932?logo=Harbor&logoColor=white"/> <img src="https://img.shields.io/badge/cert--manager-326CE5"/> <img src="https://img.shields.io/badge/Kyverno-0066CC"/> <img src="https://img.shields.io/badge/Velero-1B67B4"/>|
+|Observability|<img src="https://img.shields.io/badge/Grafana-F46800?logo=Grafana&logoColor=white"/> <img src="https://img.shields.io/badge/Prometheus-E6522C?logo=Prometheus&logoColor=white"/> <img src="https://img.shields.io/badge/Fluent_Bit-49BDA5?logo=Fluent%20Bit&logoColor=white"/> |
+|Security & Policy|<img src="https://img.shields.io/badge/cert--manager-326CE5"/> <img src="https://img.shields.io/badge/Kyverno-0066CC"/>|
+|Storage & Registry|<img src="https://img.shields.io/badge/Harbor-60B932?logo=Harbor&logoColor=white"/> <img src="https://img.shields.io/badge/Velero-1B67B4"/> <img src="https://img.shields.io/badge/MinIO-C72E49"/>|
 |Development|<img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white"/>|
 |OS & Tools|<img src="https://img.shields.io/badge/Ubuntu-E95420?logo=ubuntu&logoColor=white"/> <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white"/>|
 
