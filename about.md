@@ -91,41 +91,15 @@ tagline: |-
 # 💼 경력
 
 > [!abstract] 데이타솔루션 | AI테크서비스팀 <sub> 2024.04. ~  </sub>
-> ### vSphere8 & VCF 9 쿠버네티스 플랫폼(TKGm, VKS) 구축 및 운영 
+> ### vSphere 8 & VCF 9 쿠버네티스 플랫폼(TKGm, VKS) 구축 및 운영 
 > - OSS 구축 및 연동 담당 인력
 > - ==**국내 최초**== Avi Loadbalancer의 GSLB 구축
 > - ==**글로벌 최초**== VCF 9 Private AI Service PoC
-> - VMware Tech Summit 2026 부스 지원
-
-
-> > **[한화생명] VKS 구축** <sub>2026.08. ~ </sub>
-> > - VKS(QA) 구축
-> > - ==**국내 최초**== Avi Loadbalancer의 GSLB 구축
-> > - ArgoCD Operator(Supervisor Service) 구축 지원
-> > 
-> > **[SK머티리얼즈] VKS 구축** <sub>2026.07. ~ </sub>
-> > - VKS 구축
-> > - VCF-Support & Third-party OSS 구축 지원
-> > - Keycloak, Pinniped, VCF Automation 간 운영 최소 권한 분리
-> > 
-> > **[한국광해광업공단] VKS & PrivateAI 설계/PoC/구축** <sub>2026.03. ~ 2026.05.</sub>
-> > - VKS 구축
-> > - ==**글로벌 최초**== VCF Private AI Service PoC
-> > 
-> > **[삼성전자 MX] VMware TKGm 운영 지원** <sub>2024.06. ~ </sub>
-> > - vSphere 환경 및 Tanzu Kubernetes 플랫폼 운영 지원
-> > 	- 약 50개의 쿠버네티스 클러스터에 대한 운영 지원
-> > 	- Grafana를 통한 중앙 관리 모니터링 구축
-> > 	- PM 작업 7회 ==**전 작업 무사고**==
-> > 	- VMware TKGm 및 TMC-SM 업그레이드
-> > 	- Velero 기반 Cold DR(재해복구) 환경 구축
-> > 	- Tanzu-Support OSS 기반 운영 지원
-> > - VKS 플랫폼 마이그레이션 및 구축 프로세스 수립
-> > - 테스트베드 구축 및 Bash 스크립트를 활용한 반복 프로세스 자동화
-> ### 사내 VKS (vSphere Kubernetes Service) 시스템 구축
-> > - Supervisor 배포 및 VyOS 기반의 L2/L3 VLAN 제어 체계 수립
-> > - ClusterAPI를 활용하여 유연한 클러스터 환경 최적화
-> > - 제한된 라이선스 환경에서 OSS 기반 설치 진행 
+> - VMware Tech Summit 2026 `Private AI` 부스 운영 지원
+> > **삼성전자<sup>2024.06. ~ </sup>**: vSphere 8 TKGm 운영, VCF 9 VKS 설계/구축/운영
+> > **한화생명<sup>2026.08. ~ </sup>**: VCF 9, VKS 설계/구축
+> > **SK머터리얼즈<sup>2026.07. ~ </sup>**: VKS 및 운영용 OSS 구축
+> > **한국광해광업공단<sup>2026.03. ~ 2026.05.</sup>**: VKS & Private AI 설계/PoC/구축
 
 <div className="page"/>
 
