@@ -5,7 +5,7 @@ phone:
 blog: https://juye-ops.github.io/
 tagline: |-
   Kubernetes 기반 플랫폼의 구축과 운영, 자동화에 강점을 가진 엔지니어입니다.
-  
+
   클러스터 운영 과정에서 발생하는 문제를 직접 분석하고 해결하며,
   반복되는 운영 작업을 자동화하고 OSS를 활용해 운영 효율과 장애 대응력을 개선해왔습니다.
 ---
@@ -47,7 +47,7 @@ tagline: |-
 ### Infrastructure
 <img src="https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white"/>
 <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white"/>
-<img src="https://img.shields.io/badge/VCF-737373?logo=vmware&logoColor=white"/>
+<img src="https://img.shields.io/badge/VCF_9-737373?logo=vmware&logoColor=white"/>
 
 ### OS & Tools
 <img src="https://img.shields.io/badge/Ubuntu-E95420?logo=ubuntu&logoColor=white"/>
@@ -97,10 +97,11 @@ tagline: |-
 > - ==**국내 최초**== Avi Loadbalancer의 GSLB 구축
 > - VMware Tech Summit 2026 `Private AI` 부스 운영 지원
 > - 고객사 환경 60개의 쿠버네티스 클러스터 운영 지원
-> > **삼성전자<sup>2024.06. ~ </sup>**: vSphere 8 TKGm 운영, VCF 9 VKS 설계/구축/운영
-> > **한화생명<sup>2026.08. ~ </sup>**: VCF 9 VKS 설계/구축
-> > **SK머터리얼즈<sup>2026.07. ~ </sup>**: VCF 9 VKS 및 운영용 OSS 구축
-> > **한국광해광업공단<sup>2026.03. ~ 2026.05.</sup>**: VCF 9 VKS & Private AI 설계/PoC/구축
+> > #### 주요 프로젝트
+> > - **삼성전자<sup>2024.06. ~ </sup>**: vSphere 8 TKGm 운영, VCF 9 VKS 설계/구축/운영
+> > - **한화생명<sup>2026.08. ~ </sup>**: VCF 9 VKS 설계/구축
+> > - **SK머터리얼즈<sup>2026.07. ~ </sup>**: VCF 9 VKS 및 운영용 OSS 구축
+> > - **한국광해광업공단<sup>2026.03. ~ 2026.05.</sup>**: VCF 9 VKS & Private AI 설계/PoC/구축
 
 <div className="page"/>
 
