@@ -2,7 +2,7 @@
 name: 김주엽
 email: kjye.ops@gmail.com
 phone:
-blog: https://juye-ops.github.io/
+blog: ""
 tagline: |-
   Kubernetes 기반 플랫폼의 구축과 운영, 자동화에 강점을 가진 엔지니어입니다.
 
